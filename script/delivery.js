@@ -98,7 +98,7 @@ $('#option').append(pro);
            console.log(data);
 
            if(locationId == ''){ 
-            $('error').html('this field required');
+            $('#error').html('this field required');
 
            }else{ 
 

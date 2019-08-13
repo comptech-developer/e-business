@@ -290,7 +290,7 @@
             <label>Location (eg. city/region)</label>
           <input  type="text" name="locationName" value="" id="search-box" class="form-control test" required="" /> 
           <input type="hidden" name="locationId" value="" id="locationId">
-          <span class="error"></span>
+          <span class="error" id="error"></span>
 
 <div id="suggesstion-box"></div> 
         </div>
