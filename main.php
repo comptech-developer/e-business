@@ -296,7 +296,7 @@
         </div>
 
         <div class="md-form mb-4" id="otherFieldDiv" style="display:none">
-          <label for="seeAnotherField" >Select WareHouse</label>
+          <label>Select WareHouse</label>
           <input type="text" id="warehouse" name="" class="form-control test" id="otherField" >
             <input type="hidden" name="" value="" id="dd"> 
 <div id="ware-house-list"></div> 
