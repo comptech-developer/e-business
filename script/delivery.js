@@ -1,8 +1,8 @@
 + $(document).ready(function(){  
-  const url = "http://929d8a45.ngrok.io/paymenttypes";
-   const urlcoutry ="http://929d8a45.ngrok.io/locallocation"; 
-   const urlwarehouse = "http://929d8a45.ngrok.io/warehouse"
-   const urlsold = "http://929d8a45.ngrok.io/saveassold";
+  const url = "http://0ce8aa99.ngrok.io/paymenttypes";
+   const urlcoutry ="http://0ce8aa99.ngrok.io/locallocation"; 
+   const urlwarehouse = "http://0ce8aa99.ngrok.io/warehouse"
+   const urlsold = "http://0ce8aa99.ngrok.io/saveassold";
   $.getJSON(url,function(data){ 
     var pay = JSON.stringify(data);
    localStorage.setItem('pay',pay);
