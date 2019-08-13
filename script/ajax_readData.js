@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-const Url= 'http://0ce8aa99.ngrok.io/categories';
-const Url2 = 'http://0ce8aa99.ngrok.io/recomendedproducts';
-const Url3 = 'http://0ce8aa99.ngrok.io/randomproducts';
+const Url= 'https://0ce8aa99.ngrok.io/categories';
+const Url2 = 'https://0ce8aa99.ngrok.io/recomendedproducts';
+const Url3 = 'https://0ce8aa99.ngrok.io/randomproducts';
 //initialise function
  
 load_recomendedproducts(Url2);
