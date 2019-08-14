@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+ var userId = 1;
+           if (userId == null) {
+                    
+                    window.location.href = 'index';
+                   }
 
 const Url= 'https://8b34e5be.ngrok.io/categories';
 const Url2 = 'https://8b34e5be.ngrok.io/recomendedproducts';
