@@ -51,13 +51,9 @@
 <script type="text/javascript">
 
 
-/// some script
+/// some prevention script
 
-// jquery ready start
-$(document).ready(function() {
-// jQuery code
-
-}); 
+  
 // jquery end
 </script>
   <style>
