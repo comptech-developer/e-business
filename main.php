@@ -18,13 +18,19 @@
 <!-- ================= main slide ================= -->
 <div class="owl-init slider-main owl-carousel" data-items="1" data-nav="true" data-dots="false">
 <div class="item-slide">
-<img src="images/banners/slide1.jpg">
+<img src="images/banners/1.png">
 </div>
 <div class="item-slide">
-<img src="images/banners/slide2.jpg">
+<img src="images/banners/2.png">
 </div>
 <div class="item-slide">
-<img src="images/banners/slide3.jpg">
+<img src="images/banners/3.png">
+</div>
+<div class="item-slide">
+<img src="images/banners/4.png">
+</div>
+<div class="item-slide">
+<img src="images/banners/5.png">
 </div>
 </div>
 <!-- ============== main slidesow .end // ============= -->
@@ -291,14 +297,18 @@
           <input  type="text" name="locationName" value="" id="search-box" class="form-control test" required="" /> 
           <input type="hidden" name="locationId" value="" id="locationId">
           <span class="error"></span>
-
+            <p>Delivery Fee <span  id="dvfee"></span></p>
 <div id="suggesstion-box"></div> 
+        </div>
+          <div class="md-form mb-5">
+            <label>Address Note</label>
+          <input type="text" name="addressNote" value="" id="dd" class="form-control" required="" />  
         </div>
 
         <div class="md-form mb-4" id="otherFieldDiv" style="display:none">
           <label for="seeAnotherField" >Select WareHouse</label>
           <input type="text" id="warehouse" name="" class="form-control test" id="otherField" >
-            <input type="hidden" name="" value="" id="dd"> 
+            
 <div id="ware-house-list"></div> 
         </div>
 

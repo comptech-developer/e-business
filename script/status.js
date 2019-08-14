@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-const urldelivery = 'http://929d8a45.ngrok.io/deliverylist';
-const urlpending = 'http://929d8a45.ngrok.io/pendingreferencelist';
+const urldelivery = 'https://8b34e5be.ngrok.io/deliverylist';
+const urlpending = 'https://8b34e5be.ngrok.io/pendingreferencelist';
 var pdata = $.parseJSON(localStorage.getItem('objvrf'));
 
 $("#deliverysize").mouseenter(function(){

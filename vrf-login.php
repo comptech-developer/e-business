@@ -107,8 +107,8 @@ $(document).ready(function() {
 
 <br><br>
 
-
-<div class="card " style="margin: 0 auto; width: 30%;">
+<div class="row">
+<div class="card col-md-4" style="margin: 0 auto;padding: 2px 2px 2px 2px;">
  
 <header class="card-header " >
  
@@ -132,6 +132,7 @@ $(document).ready(function() {
 </article> <!-- card-body end .// -->
 <div class="border-top card-body text-center"> <a href="index"></a></div>
  </div>
+</div>
 <br>
 <br>
 

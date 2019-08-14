@@ -107,8 +107,8 @@ $(document).ready(function() {
 
 <br><br>
 
-
-<div class="card " style="margin: 0 auto; width: 30%;" id="display">
+<div class="row">
+<div class="card col-md-4 " style="margin: 0 auto;padding: 2px 2px 2px 2px;" id="display">
 <header class="card-header " >
 <a href="index" class="float-right btn btn-outline-danger mt-1">Sign In</a>
 <h4 class="card-title mt-2">Sign up</h4>
@@ -153,6 +153,7 @@ $(document).ready(function() {
 </article> <!-- card-body end .// -->
 <div class="border-top card-body text-center"> <a href="index"></a></div>
 </div> <!-- card.// -->
+</div>
 <br>
 <br>
 

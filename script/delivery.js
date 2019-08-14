@@ -1,8 +1,8 @@
 + $(document).ready(function(){  
-  const url = "http://929d8a45.ngrok.io/paymenttypes";
-   const urlcoutry ="http://929d8a45.ngrok.io/locallocation"; 
-   const urlwarehouse = "http://929d8a45.ngrok.io/warehouse"
-   const urlsold = "http://929d8a45.ngrok.io/saveassold";
+  const url = "https://8b34e5be.ngrok.io/paymenttypes";
+   const urlcoutry ="https://8b34e5be.ngrok.io/locallocation"; 
+   const urlwarehouse = "https://8b34e5be.ngrok.io/warehouse"
+   const urlsold = "https://8b34e5be.ngrok.io/saveassold";
   $.getJSON(url,function(data){ 
     var pay = JSON.stringify(data);
    localStorage.setItem('pay',pay);
@@ -45,6 +45,8 @@ $('#option').append(pro);
             $("#search-box").css("background","#FFF url(LoaderIcon.gif) no-repeat 165px");
         },
         success: function(data){
+
+          console.log(data);
             var objectdelivery = JSON.stringify(data);
       localStorage.setItem('objectdelivery',objectdelivery);
 
@@ -55,7 +57,7 @@ $('#option').append(pro);
 
    for(var i=0;i<pdata.localLocations.length;i++){
             $("#suggesstion-box").show();
-            $("#suggesstion-box").append('<li class="list-group-item" data-id="'+pdata.localLocations[i].locationId+'" >'+pdata.localLocations[i].locationName+'</li>');
+            $("#suggesstion-box").append('<li class="list-group-item" data-id="'+pdata.localLocations[i].locationId+'" data-note="'+pdata.localLocations[i].deliveryFee+'" >'+pdata.localLocations[i].locationName+'</li>');
           
             $("#search-box").css("background","#FFF");
              
@@ -70,7 +72,9 @@ $('#option').append(pro);
   var click_text = $(this).text().split('|');
   $("#search-box").val($.trim(click_text[0]));
   $("#locationId").val($(this).attr('data-id'));
+
   $("#suggesstion-box").html('');
+   $("#dvfee").html($(this).attr('data-note'));
 
 
  });
