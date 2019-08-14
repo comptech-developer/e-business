@@ -1,8 +1,10 @@
 $(document).ready(function(){
 
+
 const Url= 'https://8b34e5be.ngrok.io/categories';
 const Url2 = 'https://8b34e5be.ngrok.io/recomendedproducts';
 const Url3 = 'https://8b34e5be.ngrok.io/randomproducts';
+ 
 //initialise function
  
 load_recomendedproducts(Url2);

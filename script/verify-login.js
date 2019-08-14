@@ -1,6 +1,8 @@
 $(document).ready(function(){ 
    
+ 
   const urlVerify ="https://8b34e5be.ngrok.io/verify"; 
+ 
   
    var pdata = $.parseJSON(localStorage.getItem('objuser'));
   $('#userId').val(pdata.login.userId);

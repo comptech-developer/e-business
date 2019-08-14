@@ -1,8 +1,10 @@
 $(document).ready(function(){  
 
+ 
 const url = 'https://8b34e5be.ngrok.io/userinformation';
 const urlcredit = 'https://8b34e5be.ngrok.io/creditlist';
 const urlpurchase = 'https://8b34e5be.ngrok.io/allpurchases';
+ 
    var pdata = $.parseJSON(localStorage.getItem('objvrf'));
  
   

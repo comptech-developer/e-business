@@ -108,7 +108,9 @@ $(document).ready(function() {
 <br><br>
 
 <div class="row">
+ 
 <div class="card col-md-4" style="margin: 0 auto;padding: 2px 2px 2px 2px">
+ 
  
 <header class="card-header " >
  

@@ -1,6 +1,8 @@
 $(document).ready(function(){ 
  
+
   const url_product= "https://8b34e5be.ngrok.io/productdetails";
+ 
  load_curren_user()
  
 

@@ -1,8 +1,10 @@
 	//http://localhost:8080/login ->http://localhost:9000/additemtocart
  $(document).ready(function(){
     
+ 
     const urlcoutry ="http://8b34e5be.ngrok.io/country"; 
     const urllogin ="http://8b34e5be.ngrok.io/login"; 
+ 
     $("#search-box").keyup(function(){
         var co = { countryName:$('#search-box').val()}
         $.ajax({

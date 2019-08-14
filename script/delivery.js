@@ -1,8 +1,10 @@
-+ $(document).ready(function(){  
+ $(document).ready(function(){  
+
   const url = "https://8b34e5be.ngrok.io/paymenttypes";
    const urlcoutry ="https://8b34e5be.ngrok.io/locallocation"; 
    const urlwarehouse = "https://8b34e5be.ngrok.io/warehouse"
    const urlsold = "https://8b34e5be.ngrok.io/saveassold";
+ 
   $.getJSON(url,function(data){ 
     var pay = JSON.stringify(data);
    localStorage.setItem('pay',pay);
@@ -102,7 +104,7 @@ $('#option').append(pro);
            console.log(data);
 
            if(locationId == ''){ 
-            $('error').html('this field required');
+            $('#error').html('this field required');
 
            }else{ 
 

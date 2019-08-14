@@ -102,8 +102,7 @@ $(document).ready(function() {
 <br><br>
 
 <div class="row">
-
-	
+ 
 <div class="card col-md-4 " style="margin: 0 auto;padding: 2px 2px 2px 2px;" id="display">
 <header class="card-header " >
  <a href="register" class="float-right btn btn-outline-danger mt-1">Sign Up</a>
@@ -128,7 +127,7 @@ $(document).ready(function() {
 </article> <!-- card-body end .// -->
 <div class="border-top card-body text-center"> <a href="index.php"></a></div>
 </div> <!-- card.// -->
-
+ 
 </div>
 <br>
 <br>
