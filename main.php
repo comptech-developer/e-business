@@ -296,16 +296,15 @@
             <label>Location (eg. city/region)</label>
           <input  type="text" name="locationName" value="" id="search-box" class="form-control test" required="" /> 
           <input type="hidden" name="locationId" value="" id="locationId">
- 
-          <span class="error"></span>
-            <p>Delivery Fee <span  id="dvfee"></span></p>
+  
+            <p class="fee" style="display: none;" >Delivery Fee <span  id="dvfee"></span></p>
  
           <span class="error" id="error"></span>
 
  
 <div id="suggesstion-box"></div> 
         </div>
-          <div class="md-form mb-5">
+          <div class="md-form mb-5 fees" style="display: none;" id="">
             <label>Address Note</label>
           <input type="text" name="addressNote" value="" id="dd" class="form-control" required="" />  
         </div>
@@ -313,7 +312,7 @@
         <div class="md-form mb-4" id="otherFieldDiv" style="display:none">
           <label>Select WareHouse</label>
           <input type="text" id="warehouse" name="" class="form-control test" id="otherField" >
-            
+          <input type="hidden" name="addressNote" value="" id="dd"  />
 <div id="ware-house-list"></div> 
         </div>
 

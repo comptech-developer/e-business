@@ -1,9 +1,9 @@
  $(document).ready(function(){  
 
-  const url = "https://8b34e5be.ngrok.io/paymenttypes";
-   const urlcoutry ="https://8b34e5be.ngrok.io/locallocation"; 
-   const urlwarehouse = "https://8b34e5be.ngrok.io/warehouse"
-   const urlsold = "https://8b34e5be.ngrok.io/saveassold";
+  const url = "https://bc09dca1.ngrok.io/paymenttypes";
+   const urlcoutry ="https://bc09dca1.ngrok.io/locallocation"; 
+   const urlwarehouse = "https://bc09dca1.ngrok.io/warehouse"
+   const urlsold = "https://bc09dca1.ngrok.io/saveassold";
  
   $.getJSON(url,function(data){ 
     var pay = JSON.stringify(data);
@@ -34,6 +34,7 @@ $('#option').append(pro);
     var pdata = $.parseJSON(localStorage.getItem('object'));
 
     $("#search-box").keyup(function(){
+     var  typedName = $('#search-box').val();
         var co = { typedName:$('#search-box').val(),
                    countryId:pdata.country[0].countryId }
                  
@@ -51,7 +52,14 @@ $('#option').append(pro);
           console.log(data);
             var objectdelivery = JSON.stringify(data);
       localStorage.setItem('objectdelivery',objectdelivery);
+      if(typedName == ""){
 
+        $("#suggesstion-box").html('');
+          
+       $(".fee").hide();
+        $(".fees").show();
+
+      }else { 
   
   
      var pdata = $.parseJSON(localStorage.getItem('objectdelivery'));
@@ -66,6 +74,7 @@ $('#option').append(pro);
         }
        
         }
+      }
         });
     
 
@@ -76,6 +85,8 @@ $('#option').append(pro);
   $("#locationId").val($(this).attr('data-id'));
 
   $("#suggesstion-box").html('');
+   $(".fee").show();
+    $(".fees").show();
    $("#dvfee").html($(this).attr('data-note'));
 
 
@@ -85,7 +96,7 @@ $('#option').append(pro);
     //handle ware house event 
        var user = $.parseJSON(localStorage.getItem('objvrf'));
      $("#warehouse").click(function(){
-
+       //$(".fees").hide();
        var locationId = $('#locationId').val();
         var co = { locationId:$('#locationId').val(),
                    userId:user.user.userId   
@@ -111,7 +122,7 @@ $('#option').append(pro);
               $.each(data.warehouseList,function(index,value){ 
    
             $("#ware-house-list").show();
-            $("#ware-house-list").append('<li class="list-group-item" data-id="'+value.warehouseAddress+'" ><strong>'+value.warehouseName+'</strong><br>'+value.warehouseAddress+'</li>');
+            $("#ware-house-list").append('<li class="list-group-item" data-id="'+value.warehouseAddress+'"><strong>'+value.warehouseName+'</strong><br>'+value.warehouseAddress+'</li>');
           
             $("#warehouse").css("background","#FFF");
              
@@ -140,12 +151,23 @@ $('#option').append(pro);
   var selection = $(this).val(); 
   console.log("Detected change..." + selection);
   $("#otherFieldDiv").toggle($(this).val()=="3");
+
   var option = $('option:selected', this).attr('data-id');
   $("#pay_id").val(option);
   var option2 = $('option:selected', this).attr('data-code');
   $("#pay_code").val(option2);
   console.log(option);
+
           $(".test").val("");
+           $(".fee").hide();
+            $(".fees").hide();
+  
+      if(option == "3"){
+         $(".fees").hide();
+      }
+        
+
+
 
   
 });
