@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-           if (userId == null) {
 var pdata = $.parseJSON(localStorage.getItem('objvrf'));
  
            if (pdata == null) {
