@@ -1,9 +1,9 @@
  $(document).ready(function(){  
 
-  const url = "https://9278d813.ngrok.io/paymenttypes";
-   const urlcoutry ="https://9278d813.ngrok.io/locallocation"; 
-   const urlwarehouse = "https://9278d813.ngrok.io/warehouse"
-   const urlsold = "https://9278d813.ngrok.io/saveassold";
+  const url = "https://53394d17.ngrok.io/paymenttypes";
+   const urlcoutry ="https://53394d17.ngrok.io/locallocation"; 
+   const urlwarehouse = "https://53394d17.ngrok.io/warehouse"
+   const urlsold = "https://53394d17.ngrok.io/saveassold";
  
   $.getJSON(url,function(data){ 
     var pay = JSON.stringify(data);
@@ -77,51 +77,30 @@ $('#option').append(pro);
       }
         });
     
-     //hadle click events 
+    
+     
+    
+   
+        
 
-     $('#option').on('change',function(e){
-      e.preventDefault();
-  var selection = $(this).val(); 
-  console.log("Detected change..." + selection);
-  $("#otherFieldDiv").toggle($(this).val()=="3");
+ $('#suggesstion-box').on('click', 'li', function() {
 
-  var option = $('option:selected', this).attr('data-id');
-  $("#pay_id").val(option);
-  var option2 = $('option:selected', this).attr('data-code');
-  $("#pay_code").val(option2);
-  console.log(option);
-
-
-
-          $(".test").val("");
-           $(".fee").hide();
-            $(".fees").hide();
-
-
-  
-});
-
-
- $('#suggesstion-box').on('click', 'li', function(e) {
   var click_text = $(this).text().split('|');
   $("#search-box").val($.trim(click_text[0]));
   $("#locationId").val($(this).attr('data-id'));
 
   $("#suggesstion-box").html('');
+  
    $(".fee").show();
-     
-       var tatu = 3;
-            if(option == "3"){
-        $(".fees").hide();
-         alert('iyo ni tatu');
-      }
-           if(option != "3"){
-             $(".fees").show();
-            
-      }
-    
-   $("#dvfee").html($(this).attr('data-note'));
+    $("#dvfee").html($(this).attr('data-note'));
 
+     var selectedcolor = $('#option').val(); 
+
+       if(selectedcolor == 3){
+
+         $(".fees").hide();
+       }else{  $(".fees").show();}
+  
 
  });
 });
@@ -177,7 +156,26 @@ $('#option').append(pro);
  });
 });
 
+      //hadle click events 
+
+
+     $('#option').on('change',function(e){
+      e.preventDefault();
+  var selection = $(this).val(); 
+  console.log("Detected change..." + selection);
+  $("#otherFieldDiv").toggle($(this).val()=="3");
+  var option = $('option:selected', this).attr('data-id');
+  $("#pay_id").val(option);
+  var option2 = $('option:selected', this).attr('data-code');
+  $("#pay_code").val(option2);
+  console.log(option);
   
+    $(".test").val("");
+           $(".fee").hide();
+            $(".fees").hide();
+
+
+});
 
 if(!$('#option')==0){
 var option2 = $('option:selected', this).attr('data-code');
@@ -185,6 +183,9 @@ var option2 = $('option:selected', this).attr('data-code');
 }else{
 console.log(1);
 }
+     
+
+  
  var user = $.parseJSON(localStorage.getItem('objvrf'));
  $("#confirm").click(function(){
         var delivery = { "deliveryInformation":{
@@ -208,7 +209,7 @@ console.log(1);
   console.log(JSON.stringify(delivery));
    $.ajax({
         type: "POST",
-        url: '',
+        url: urlsold,
         data:JSON.stringify(delivery),
         contentType: 'application/json',
         success: function(data){

@@ -7,9 +7,9 @@ var pdata = $.parseJSON(localStorage.getItem('objvrf'));
                     window.location.href = 'index';
                    } 
 
-const Url= 'https://9278d813.ngrok.io/categories';
-const Url2 = 'https://9278d813.ngrok.io/recomendedproducts';
-const Url3 = 'https://9278d813.ngrok.io/randomproducts';
+const Url= 'https://c503de22.ngrok.io/categories';
+const Url2 = 'https://c503de22.ngrok.io/recomendedproducts';
+const Url3 = 'https://c503de22.ngrok.io/randomproducts';
  
 //initialise function
  

@@ -1,7 +1,7 @@
 $(document).ready(function(){ 
    
  
-  const urlVerify ="https://9278d813.ngrok.io/verify"; 
+  const urlVerify ="https://53394d17.ngrok.io/verify"; 
  
   
    var pdata = $.parseJSON(localStorage.getItem('objuser'));

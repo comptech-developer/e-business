@@ -309,16 +309,16 @@
           <input type="text" name="addressNote" value="" id="dd" class="form-control test" required="" />  
         </div>
 
-        <div class="md-form mb-4" id="otherFieldDiv" style="display:none">
+        <div class="" id="otherFieldDiv" style="display:none">
           <label>Select WareHouse</label>
-          <input type="text" id="warehouse" name="" class="form-control test" id="otherField" >
+      <input type="text" id="warehouse" name="" class="form-control test border-top-0 border-left-0 border-right-0" id="otherField" >
           <input type="hidden" name="addressNote" value="" id="dd"  />
 <div id="ware-house-list"></div> 
         </div>
 
       </div>
       <div class="modal-footer d-flex ">
-        <button class="btn btn-light float-left" data-dismiss="modal" aria-label="Close" style="margin-right: 300px;" >Cancel</button> <button class="btn btn-light float-right" data-dismiss="modal"  id="confirm">Confirm</button>
+        <button class="btn btn-light " data-dismiss="modal" aria-label="Close" style="margin-right: 100px;" >Cancel</button> <button class="btn btn-light " data-dismiss="modal"  id="confirm" >Confirm</button>
       </div>
     </div>
   </div>
