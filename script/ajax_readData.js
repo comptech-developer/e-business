@@ -7,9 +7,9 @@ var pdata = $.parseJSON(localStorage.getItem('objvrf'));
                     window.location.href = 'index';
                    } 
 
-const Url= 'https://bc09dca1.ngrok.io/categories';
-const Url2 = 'https://bc09dca1.ngrok.io/recomendedproducts';
-const Url3 = 'https://bc09dca1.ngrok.io/randomproducts';
+const Url= 'https://9278d813.ngrok.io/categories';
+const Url2 = 'https://9278d813.ngrok.io/recomendedproducts';
+const Url3 = 'https://9278d813.ngrok.io/randomproducts';
  
 //initialise function
  
@@ -45,7 +45,7 @@ $("#menu").append(links);
 $.each(result.categories["0"].categoryProductList,function(key,value){
  var pro = '';
 
-pro += '<div class="col-md-3 " >';
+pro += '<div class="col-md-3 vitu " >';
 pro += '<figure class="card card-sm card-product">';
 pro += '<div class="img-wrap"><img src="' + value.images["0"].imageUrl +'" width="300px" height="150px" class="img-fluid"></div>';
 pro += '<figcaption class="info-wrap text-center">';
@@ -56,12 +56,24 @@ pro += '</figcaption></figure> </div>';
 
 $("#item").append(pro);
 });
+if ($('.vitu').length > 4) {
+  $('.vitu:gt(3)').hide();
+  $('.show-more').show();
+}
+
+$('.show-more').on('click', function() {
+  //toggle elements with class .ty-compact-list that their index is bigger than 2
+  $('.vitu:gt(3)').toggle();
+  //change text of show more element just for demonstration purposes to this demo
+  $(this).text() === 'Show less' ? $(this).text('Show more') : $(this).text('Show less');
+});
+ 
 
 //load second category
 $.each(result.categories["1"].categoryProductList,function(key,value){
 var prod = '';
 //populate to html product list
- prod += '<div class="col-md-3 " >';
+ prod += '<div class="col-md-3 vitu1 " >';
  prod += '<figure class="card card-sm card-product">';
 prod += '<div class="img-wrap"><img src="' + value.images["0"].imageUrl +'" width="250px" height="150px" class="img-fluid"></div>';
 prod += '<figcaption class="info-wrap text-center">';
@@ -73,11 +85,23 @@ $("#item1").append(prod);
 
 });
 
+if ($('.vitu1').length > 4) {
+  $('.vitu1:gt(3)').hide();
+  $('.show-more1').show();
+}
+
+$('.show-more1').on('click', function() {
+  //toggle elements with class .ty-compact-list that their index is bigger than 2
+  $('.vitu1:gt(3)').toggle();
+  //change text of show more element just for demonstration purposes to this demo
+  $(this).text() === 'Show less' ? $(this).text('Show more') : $(this).text('Show less');
+});
+
 //load third category
 $.each(result.categories["2"].categoryProductList,function(key,value){
 var prod = '';
 //populate to html product list
-  prod += '<div class="col-md-3">';
+  prod += '<div class="col-md-3 vitu2">';
   prod += '<figure class="card card-sm card-product">';
 prod += '<div class="img-wrap"><img src="' + value.images["0"].imageUrl +'" width="250px" height="150px" class="img-fluid"></div>';
 prod += '<figcaption class="info-wrap text-center">';
@@ -88,11 +112,21 @@ prod  += '<button data-toggle="modal" data-id="'+value.productId+'" data-name="'
 $("#item2").append(prod);
 
 });
+if ($('.vitu2').length > 4) {
+  $('.vitu2:gt(3)').hide();
+  $('.show-more2').show();
+}
 
+$('.show-more2').on('click', function() {
+  //toggle elements with class .ty-compact-list that their index is bigger than 2
+  $('.vitu2:gt(3)').toggle();
+  //change text of show more element just for demonstration purposes to this demo
+  $(this).text() === 'Show less' ? $(this).text('Show more') : $(this).text('Show less');
+});
 //load fourth category
 $.each(result.categories["3"].categoryProductList,function(key,value){
 var prod = '';
-  prod += '<div class="col-md-3">';
+  prod += '<div class="col-md-3 vitu3">';
   prod+=  '<figure class="card card-sm card-product">';
 prod += '<div class="img-wrap"><img src="' + value.images["0"].imageUrl +'" width="250px" height="150px" class="img-fluid"></div>';
   prod += '<figcaption class="info-wrap text-center">';
@@ -103,12 +137,22 @@ prod += '</figcaption></figure></div>';
 $("#item3").append(prod);
 
 });
+if ($('.vitu3').length > 4) {
+  $('.vitu3:gt(3)').hide();
+  $('.show-more3').show();
+}
 
+$('.show-more3').on('click', function() {
+  //toggle elements with class .ty-compact-list that their index is bigger than 2
+  $('.vitu3:gt(3)').toggle();
+  //change text of show more element just for demonstration purposes to this demo
+  $(this).text() === 'Show less' ? $(this).text('Show more') : $(this).text('Show less');
+});
 //load fifth catagory
 $.each(result.categories["4"].categoryProductList,function(key,value){
 var prod = '';
 //populate to html product list
-  prod += '<div class="col-md-3">';
+  prod += '<div class="col-md-3 vitu4">';
   prod+=  '<figure class="card card-sm card-product">';
 prod += '<div class="img-wrap"><img src="' + value.images["0"].imageUrl +'" width="250px" height="150px" class="img-fluid"></div>';
 prod += '<figcaption class="info-wrap text-center">';
@@ -119,7 +163,17 @@ prod += '</figcaption></figure></div>';
 $("#item4").append(prod);
 
 });
+if ($('.vitu4').length > 4) {
+  $('.vitu4:gt(3)').hide();
+  $('.show-more4').show();
+}
 
+$('.show-more4').on('click', function() {
+  //toggle elements with class .ty-compact-list that their index is bigger than 2
+  $('.vitu4:gt(3)').toggle();
+  //change text of show more element just for demonstration purposes to this demo
+  $(this).text() === 'Show less' ? $(this).text('Show more') : $(this).text('Show less');
+});
 //load category tagline
 var specificmenu = '';
 var specificmenu2 = '';

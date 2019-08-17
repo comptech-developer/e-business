@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
  
-const urldelivery = 'https://bc09dca1.ngrok.io/deliverylist';
-const urlpending = 'https://bc09dca1.ngrok.io/pendingreferencelist';
+const urldelivery = 'https://9278d813.ngrok.io/deliverylist';
+const urlpending = 'https://9278d813.ngrok.io/pendingreferencelist';
  
 var pdata = $.parseJSON(localStorage.getItem('objvrf'));
 

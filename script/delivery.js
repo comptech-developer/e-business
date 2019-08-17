@@ -1,9 +1,9 @@
  $(document).ready(function(){  
 
-  const url = "https://bc09dca1.ngrok.io/paymenttypes";
-   const urlcoutry ="https://bc09dca1.ngrok.io/locallocation"; 
-   const urlwarehouse = "https://bc09dca1.ngrok.io/warehouse"
-   const urlsold = "https://bc09dca1.ngrok.io/saveassold";
+  const url = "https://9278d813.ngrok.io/paymenttypes";
+   const urlcoutry ="https://9278d813.ngrok.io/locallocation"; 
+   const urlwarehouse = "https://9278d813.ngrok.io/warehouse"
+   const urlsold = "https://9278d813.ngrok.io/saveassold";
  
   $.getJSON(url,function(data){ 
     var pay = JSON.stringify(data);

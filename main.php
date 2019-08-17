@@ -66,7 +66,7 @@
 <div class="card-body zoom-wrap">
 <h5 class="title" id="Icon1"></h5>
 <p id="tagline1"> </p>
-<a href="#" class="btn  btn-md" >Explore</a>
+<p href="#" class="btn  btn-md show-more1" >Explore</p>
 <img src="" height="200" class="img-bg zoom-in">
 </div>
 </article>
@@ -105,7 +105,7 @@
 <div class="card-body zoom-wrap">
 <h5 class="title" id="Icon2"></h5>
 <p id="tagline2"> </p>
-<a href="#" class="btn  btn-md">Explore</a>
+<p  class="btn  btn-md show-more">Explore</p>
 <img src=""class="img-bg zoom-in">
 </div>
 </article> 
@@ -147,7 +147,7 @@
 <div class="card-body zoom-wrap">
 <h5 class="title" id="Icon3"></h5>
 <p  id="tagline3"> </p>
-<a href="#" class="btn  btn-md">Explore</a>
+<p  class="btn  btn-md show-more2 ">Explore</p>
 <img src="" height="200" class="img-bg zoom-in">
 </div>
 </article>
@@ -185,7 +185,7 @@
 <div class="card-body zoom-wrap">
 <h5 class="title" id="Icon4"></h5>
 <p id="tagline4"> </p>
-<a href="#" class="btn  btn-md">Explore</a>
+<a href="#" class="btn  btn-md show-more3">Explore</a>
 <img src="" height="200" class="img-bg zoom-in">
 </div>
 </article>
@@ -223,7 +223,7 @@
 <div class="card-body zoom-wrap">
 <h5 class="title" id="Icon5"></h5>
 <p id="tagline5"> </p>
-<a href="#" class="btn  btn-md">Explore</a>
+<a href="#" class="btn  btn-md show-more1">Explore</a>
 <img src="" height="200" class="img-bg zoom-in">
 </div>
 </article>
