@@ -185,7 +185,7 @@
 <div class="card-body zoom-wrap">
 <h5 class="title" id="Icon4"></h5>
 <p id="tagline4"> </p>
-<a href="#" class="btn  btn-md show-more3">Explore</a>
+<p href="#" class="btn  btn-md show-more3">Explore</p>
 <img src="" height="200" class="img-bg zoom-in">
 </div>
 </article>
@@ -223,7 +223,7 @@
 <div class="card-body zoom-wrap">
 <h5 class="title" id="Icon5"></h5>
 <p id="tagline5"> </p>
-<a href="#" class="btn  btn-md show-more1">Explore</a>
+<p href="#" class="btn  btn-md show-more4">Explore</p>
 <img src="" height="200" class="img-bg zoom-in">
 </div>
 </article>
