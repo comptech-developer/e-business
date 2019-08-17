@@ -57,7 +57,7 @@ $('#option').append(pro);
         $("#suggesstion-box").html('');
           
        $(".fee").hide();
-        $(".fees").show();
+        
 
       }else { 
   
@@ -77,6 +77,29 @@ $('#option').append(pro);
       }
         });
     
+     //hadle click events 
+
+     $('#option').on('change',function(e){
+      e.preventDefault();
+  var selection = $(this).val(); 
+  console.log("Detected change..." + selection);
+  $("#otherFieldDiv").toggle($(this).val()=="3");
+
+  var option = $('option:selected', this).attr('data-id');
+  $("#pay_id").val(option);
+  var option2 = $('option:selected', this).attr('data-code');
+  $("#pay_code").val(option2);
+  console.log(option);
+
+
+
+          $(".test").val("");
+           $(".fee").hide();
+            $(".fees").hide();
+
+
+  
+});
 
 
  $('#suggesstion-box').on('click', 'li', function(e) {
@@ -86,7 +109,17 @@ $('#option').append(pro);
 
   $("#suggesstion-box").html('');
    $(".fee").show();
-    $(".fees").show();
+     
+       var tatu = 3;
+            if(option == "3"){
+        $(".fees").hide();
+         alert('iyo ni tatu');
+      }
+           if(option != "3"){
+             $(".fees").show();
+            
+      }
+    
    $("#dvfee").html($(this).attr('data-note'));
 
 
@@ -144,33 +177,7 @@ $('#option').append(pro);
  });
 });
 
-   //hadle click events 
-
-     $('#option').on('change',function(e){
-      e.preventDefault();
-  var selection = $(this).val(); 
-  console.log("Detected change..." + selection);
-  $("#otherFieldDiv").toggle($(this).val()=="3");
-
-  var option = $('option:selected', this).attr('data-id');
-  $("#pay_id").val(option);
-  var option2 = $('option:selected', this).attr('data-code');
-  $("#pay_code").val(option2);
-  console.log(option);
-
-          $(".test").val("");
-           $(".fee").hide();
-            $(".fees").hide();
   
-      if(option == "3"){
-         $(".fees").hide();
-      }
-        
-
-
-
-  
-});
 
 if(!$('#option')==0){
 var option2 = $('option:selected', this).attr('data-code');
@@ -201,7 +208,7 @@ console.log(1);
   console.log(JSON.stringify(delivery));
    $.ajax({
         type: "POST",
-        url: urlsold,
+        url: '',
         data:JSON.stringify(delivery),
         contentType: 'application/json',
         success: function(data){

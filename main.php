@@ -306,7 +306,7 @@
         </div>
           <div class="md-form mb-5 fees" style="display: none;" id="">
             <label>Address Note</label>
-          <input type="text" name="addressNote" value="" id="dd" class="form-control" required="" />  
+          <input type="text" name="addressNote" value="" id="dd" class="form-control test" required="" />  
         </div>
 
         <div class="md-form mb-4" id="otherFieldDiv" style="display:none">
