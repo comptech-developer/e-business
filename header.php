@@ -1,18 +1,12 @@
-<script>
+<?php
+ $data = "<script>document.write(localStorage.getItem('objvrf'));</script>";
 
-  var pdata = $.parseJSON(localStorage.getItem('objvrf'));
+ //echo $data;
 
-  var hash = "<?php session_start(); if($pdata == null){ header('location:index');} ?>";
-        /*
-           if (pdata == null) {
+ 
+    
 
-                    //alert('Unauthorised user');
-                    window.location.href = 'index';
-
-
-                   }
-                   */
-</script>
+?>
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -63,14 +57,8 @@
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-<script>
-
-
-/// some script
-
-  
-// jquery end
-</script>
+ 
+ 
   <style>
   #result {
    position: absolute;
