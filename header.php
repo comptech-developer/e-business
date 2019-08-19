@@ -1,3 +1,18 @@
+<script>
+
+  var pdata = $.parseJSON(localStorage.getItem('objvrf'));
+
+  var hash = "<?php session_start(); if($pdata == null){ header('location:index');} ?>";
+        /*
+           if (pdata == null) {
+
+                    //alert('Unauthorised user');
+                    window.location.href = 'index';
+
+
+                   }
+                   */
+</script>
 <!DOCTYPE HTML>
 <html lang="en">
 <head>

@@ -3,13 +3,14 @@ $(document).ready(function(){
 var pdata = $.parseJSON(localStorage.getItem('objvrf'));
  
            if (pdata == null) {
+            
                     //alert('Unauthorised user');
                     window.location.href = 'index';
                    } 
 
-const Url= 'https://c503de22.ngrok.io/categories';
-const Url2 = 'https://c503de22.ngrok.io/recomendedproducts';
-const Url3 = 'https://c503de22.ngrok.io/randomproducts';
+const Url= 'https://53394d17.ngrok.io/categories';
+const Url2 = 'https://53394d17.ngrok.io/recomendedproducts';
+const Url3 = 'https://53394d17.ngrok.io/randomproducts';
  
 //initialise function
  
