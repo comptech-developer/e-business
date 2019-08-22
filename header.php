@@ -1,14 +1,11 @@
   <?php
-  session_start();
-   if(isset($_SESSION['id']))   
- {
-  echo "yooo";
-  echo $_SESSION['id'];
- }else{
-  header('location:index.php');
- }
-  
-    ?>
+ require('session.php');
+ if(isset($_SESSION['id'])){
+
+echo $_SESSION['id'];
+ }  else { header('location:index');  }
+    
+  ?>
 <!DOCTYPE HTML>
 <html lang="en">
 <head>

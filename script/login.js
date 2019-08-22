@@ -79,7 +79,7 @@ success : function(result) {
   // for start the session
     
                    $.ajax({
-                url: '../header.php', // url where to submit the request
+                url: '../session.php', // url where to submit the request
                 type : "POST", // type of action POST || GET
                  data: {'id':userid},
                 dataType : 'text',
