@@ -1,7 +1,7 @@
 $(document).ready(function(){ 
 //verify /http://localhost:8080/verify
  
-const urlVerify ="https://cd3731d1.ngrok.io/verify"; 
+const urlVerify ="https://8e7de877.ngrok.io/verify"; 
  
     var pdata = $.parseJSON(localStorage.getItem('obj1'));
   $('#userId').val(pdata.registered.userId);

@@ -1,15 +1,9 @@
 $(document).ready(function(){
 
-var pdata = $.parseJSON(localStorage.getItem('objvrf'));
  
-           if (pdata == null) {
-            
-                    //alert('Unauthorised user');
-                    window.location.href = 'index';
-                   } 
-const Url= 'https://cd3731d1.ngrok.io/categories';
-const Url2 = 'https://cd3731d1.ngrok.io/recomendedproducts';
-const Url3 = 'https://cd3731d1.ngrok.io/randomproducts';
+const Url= 'https://8e7de877.ngrok.io/categories';
+const Url2 = 'https://8e7de877.ngrok.io/recomendedproducts';
+const Url3 = 'https://8e7de877.ngrok.io/randomproducts';
  
 //initialise function
  

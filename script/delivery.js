@@ -1,9 +1,9 @@
  $(document).ready(function(){  
 
-  const url = "https://cd3731d1.ngrok.io/paymenttypes";
-   const urlcoutry ="https://cd3731d1.ngrok.io/locallocation"; 
-   const urlwarehouse = "https://cd3731d1.ngrok.io/warehouse"
-   const urlsold = "https://cd3731d1.ngrok.io/saveassold";
+  const url = "https://8e7de877.ngrok.io/paymenttypes";
+   const urlcoutry ="https://8e7de877.ngrok.io/locallocation"; 
+   const urlwarehouse = "https://8e7de877.ngrok.io/warehouse"
+   const urlsold = "https://8e7de877.ngrok.io/saveassold";
  
   $.getJSON(url,function(data){ 
     var pay = JSON.stringify(data);
@@ -37,7 +37,15 @@ $('#option').append(pro);
      var  typedName = $('#search-box').val();
         var co = { typedName:$('#search-box').val(),
                    countryId:pdata.country[0].countryId }
-                 
+                 if(typedName == ""){
+
+        $("#suggesstion-box").html('');
+          
+       $(".fee").hide();
+        
+
+      }else { 
+
         $.ajax({
         type: "POST",
         url: urlcoutry,
@@ -52,14 +60,7 @@ $('#option').append(pro);
           console.log(data);
             var objectdelivery = JSON.stringify(data);
       localStorage.setItem('objectdelivery',objectdelivery);
-      if(typedName == ""){
-
-        $("#suggesstion-box").html('');
-          
-       $(".fee").hide();
-        
-
-      }else { 
+     
   
   
      var pdata = $.parseJSON(localStorage.getItem('objectdelivery'));
@@ -74,9 +75,9 @@ $('#option').append(pro);
         }
        
         }
-      }
+      
         });
-    
+    }
     
      
     

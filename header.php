@@ -1,12 +1,14 @@
-<?php
- $data = "<script>document.write(localStorage.getItem('objvrf'));</script>";
-
- //echo $data;
-
- 
-    
-
-?>
+  <?php
+  session_start();
+   if(isset($_SESSION['id']))   
+ {
+  echo "yooo";
+  echo $_SESSION['id'];
+ }else{
+  header('location:index.php');
+ }
+  
+    ?>
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -156,7 +158,7 @@
 </a>
 <div class="dropdown-menu">
   <li class="list-group-item btn bt-primary" id="user-detail">profile</li>
-  <li class="list-group-item btn bt-primary" id="logout">logout</li>
+  <li class="list-group-item btn bt-primary" id="logout"><a class="tooltips" href="logout" style="color: black;">logout</a></li>
 
 </div> <!--  dropdown-menu .// -->
 </div>  <!-- widget-header .// -->

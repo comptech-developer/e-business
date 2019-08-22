@@ -2,8 +2,8 @@
  $(document).ready(function(){
     
  
-    const urlcoutry ="https://cd3731d1.ngrok.io/country"; 
-    const urllogin ="https://cd3731d1.ngrok.io/login"; 
+    const urlcoutry ="https://8e7de877.ngrok.io/country"; 
+    const urllogin ="https://8e7de877.ngrok.io/login"; 
  
     $("#search-box").keyup(function(){
         var co = { countryName:$('#search-box').val()}
@@ -69,16 +69,27 @@ success : function(result) {
 
  console.log(result);
  var objuser = JSON.stringify(result);
- //event.preventDefault();
-  
       localStorage.setItem('objuser',objuser);
       sessionStorage.setItem('objuser',objuser);
   console.log(localStorage.getItem('objuser'));
   
- window.location.assign('vrf-login');
+  var userid = result.login.userId;
+  console.log(userid);
 
+  // for start the session
+    
+                   $.ajax({
+                url: '../header.php', // url where to submit the request
+                type : "POST", // type of action POST || GET
+                 data: {'id':userid},
+                dataType : 'text',
 
- 
+                success:function(data){
+                 // window.location.assign('vrf-login');
+                    console.log(data);
+                }
+
+            });
 },
 error: function(xhr, resp, text) {
     alert('erro saving');

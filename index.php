@@ -128,6 +128,18 @@ $(document).ready(function() {
 <div class="border-top card-body text-center"> <a href="index.php"></a></div>
 </div> <!-- card.// -->
  
+ <?php
+
+
+if(isset($_POST['id'])){
+ session_start();
+  
+$id = $_POST['id'];
+    $_SESSION['id'] = $id;
+
+}
+
+ ?>
 </div>
 <br>
 <br>
