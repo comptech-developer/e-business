@@ -1,6 +1,6 @@
 $(document).ready(function(){
  
-  const urlsearch ="https://8e7de877.ngrok.io/search"; 
+  const urlsearch ="https://fd7e7f07.ngrok.io/search"; 
  
    var pdata = $.parseJSON(localStorage.getItem('object'));
     $("#search").keyup(function(e){
@@ -12,10 +12,12 @@ $(document).ready(function(){
                                              }
               if(text ==''){ 
 
-
+              alert('weka data acha miyeyusho ')
                $("#result").html('');
+                $(".sh").hide();
 
           }else { 
+             $(".sh").show();
         $.ajax({
         type: "POST",
         url: urlsearch,
@@ -27,7 +29,7 @@ $(document).ready(function(){
             for(i=0;i<data.seachResult.length; i++){
             dumb +='<a href="#" data-target="#myDetail" data-toggle="modal" class="list-group-item list-group-item-action detail" data-id="'+data.seachResult[i].productId+'"><img class="img-thumbnail img-sm" src="'+data.seachResult[i].images["0"].imageUrl+'" >'+data.seachResult[i].productName+' |&nbsp; '+data.seachResult[i].price+'</a>';
             $("#result").html(dumb);
-            
+              
           console.log(data.seachResult[i].productId); 
         }
       }

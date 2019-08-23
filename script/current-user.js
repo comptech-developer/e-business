@@ -1,7 +1,7 @@
 $(document).ready(function(){ 
  
 
-  const url_product= "https://8e7de877.ngrok.io/productdetails";
+  const url_product= "https://fd7e7f07.ngrok.io/productdetails";
  
  load_curren_user()
  

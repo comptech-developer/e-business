@@ -2,8 +2,8 @@
  $(document).ready(function(){
     
  
-    const urlcoutry ="https://8e7de877.ngrok.io/country"; 
-    const urllogin ="https://8e7de877.ngrok.io/login"; 
+    const urlcoutry ="https://fd7e7f07.ngrok.io/country"; 
+    const urllogin ="https://fd7e7f07.ngrok.io/login"; 
  
     $("#search-box").keyup(function(){
         var co = { countryName:$('#search-box').val()}
@@ -79,13 +79,13 @@ success : function(result) {
   // for start the session
     
                    $.ajax({
-                url: '../session.php', // url where to submit the request
+                url: './session.php', // url where to submit the request
                 type : "POST", // type of action POST || GET
                  data: {'id':userid},
                 dataType : 'text',
 
                 success:function(data){
-                 // window.location.assign('vrf-login');
+                 window.location.assign('vrf-login');
                     console.log(data);
                 }
 

@@ -2,7 +2,7 @@
  require('session.php');
  if(isset($_SESSION['id'])){
 
-echo $_SESSION['id'];
+//echo $_SESSION['id'];
  }  else { header('location:index');  }
     
   ?>
@@ -136,7 +136,7 @@ echo $_SESSION['id'];
  
 </div>
 </div>
-<ul class="list-group" id="result"></ul>
+<ul class="list-group sh" id="result"></ul>
    <br />
 
 </div> <!-- col.// -->
