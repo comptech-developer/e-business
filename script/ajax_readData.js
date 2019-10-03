@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
  
-const Url= 'https://fd7e7f07.ngrok.io/categories';
-const Url2 = 'https://fd7e7f07.ngrok.io/recomendedproducts';
-const Url3 = 'https://fd7e7f07.ngrok.io/randomproducts';
+const Url= 'https://a1eb414c.ngrok.io/categories';
+const Url2 = 'https://a1eb414c.ngrok.io/recomendedproducts';
+const Url3 = 'https://a1eb414c.ngrok.io/randomproducts';
  
 //initialise function
  

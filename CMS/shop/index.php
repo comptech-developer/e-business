@@ -109,7 +109,7 @@
   
            
   
-const url = 'http://9728b35c.ngrok.io/shopaddproduct'; 
+const url = 'http://a1eb414c.ngrok.io/shopaddproduct'; 
 
  
 $("#add").on('click', function(e){
