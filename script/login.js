@@ -2,8 +2,8 @@
  $(document).ready(function(){
     
  
-    const urlcoutry ="https://a1eb414c.ngrok.io/country"; 
-    const urllogin ="https://a1eb414c.ngrok.io/login"; 
+    const urlcoutry ="https://b29601e2.ngrok.io/country"; 
+    const urllogin ="https://b29601e2.ngrok.io/login"; 
  
     $("#search-box").keyup(function(){
         var co = { countryName:$('#search-box').val()}

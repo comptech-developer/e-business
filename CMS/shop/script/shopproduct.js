@@ -1,6 +1,6 @@
  $(document).ready(function(){
-const url = 'http://a1eb414c.ngrok.io/shopproducts';  
-const urlsold = 'http://a1eb414c.ngrok.io/shopsoldproducts';
+const url = 'https://b29601e2.ngrok.io/shopproducts';  
+const urlsold = 'https://b29601e2.ngrok.io/shopsoldproducts';
 
   $('#save').hide();
     var profl = {
@@ -75,7 +75,7 @@ console.log(xhr, resp, text);
 
 //delete product
 $(document).on('click', '.delete', function(e){ 
-  const urldelete =  'http://a1eb414c.ngrok.io/shopdeleteproduct';
+  const urldelete =  'https://b29601e2.ngrok.io/shopdeleteproduct';
   e.preventDefault();
   var del = {
       productId:$(this).data('id'),
@@ -115,7 +115,7 @@ $(document).on('click', '.edit', function(e){
 
  //save data
  $('#save').on('click',function(e){
- const urledit =  'http://a1eb414c.ngrok.io/shopeditproduct'; 
+ const urledit =  'https://b29601e2.ngrok.io/shopeditproduct'; 
    e.preventDefault();
  
   var ed = {

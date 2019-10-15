@@ -1,1 +1,0 @@
-const Url = 'script/cat.json';
