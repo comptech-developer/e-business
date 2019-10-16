@@ -25,6 +25,7 @@ data: JSON.stringify(pdata.country[0].countryId), // post data || get data
 dataType : 'json', // data type
 contentType: 'application/json',
 success : function(result) {
+  console.log(request);
 // you can see the result from the console
 // tab of the developer tools
  //load first category

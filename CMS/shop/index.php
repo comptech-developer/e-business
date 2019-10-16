@@ -40,7 +40,8 @@
             <div class="tab-content no-padding">
               <!-- Morris chart - Sales -->
               <div class="chart tab-pane " id="revenue-chart" style="">
-                <table class="table-responsive">
+                <div class="table-responsive">
+                <table class="table no-margin">
                   <thead>
                     <tr>
                       <th>ID</th>
@@ -51,6 +52,7 @@
                   
                   </tbody>
                 </table>
+              </div>
               </div>
               <div class="chart tab-pane active" id="sales-chart" style=""> <div class="table-responsive">
                 <table class="table no-margin">
