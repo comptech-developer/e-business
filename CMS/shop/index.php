@@ -39,7 +39,19 @@
             </ul>
             <div class="tab-content no-padding">
               <!-- Morris chart - Sales -->
-              <div class="chart tab-pane " id="revenue-chart" style="">categories..</div>
+              <div class="chart tab-pane " id="revenue-chart" style="">
+                <table class="table-responsive">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                    <th>Category Name</th>
+                  </tr>
+                  </thead>
+                   <tbody id="ctg">
+                  
+                  </tbody>
+                </table>
+              </div>
               <div class="chart tab-pane active" id="sales-chart" style=""> <div class="table-responsive">
                 <table class="table no-margin">
                   <thead>
@@ -122,6 +134,8 @@ $("#add").on('click', function(e){
             var nn = num[1];
   
               //console.log(numbers.slice(22))
+  var pdata = $.parseJSON(localStorage.getItem('objvrf'));
+
     var profl = {
 
         productName:$('#productname').val(),
@@ -130,7 +144,7 @@ $("#add").on('click', function(e){
       sellingPrice:$('#price').val(),
       categoryId:$('#categories').val(),
       description:$('#description').val(),
-      countryId:"1",
+      countryId:pdata.user.countryId,
      productImageDataList:[
       {
         productImageData:nn
@@ -183,10 +197,7 @@ console.log(xhr, resp, text);
                  <div class="form-group">
                 <label>category</label>
                 <select class="form-control select2"  id="categories" value="" style="width: 100%;">
-                  <option id="1" selected="selected"> 1</option>
-                  <option id="2" > 2</option>
-                  <option id="3"> 3</option>
-                  <option id="4"> 4</option>
+                
                    
                 </select>
               </div>

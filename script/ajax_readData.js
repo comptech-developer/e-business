@@ -27,14 +27,29 @@ contentType: 'application/json',
 success : function(result) {
 // you can see the result from the console
 // tab of the developer tools
-
-
  //load first category
  $.each(result.categories,function(key,value){
 var links = '';
 links += ' <li class=""><a href="" ><i class="fab fa-artstation"></i>&nbsp;'+value.categoryName+'</a></li>';
 $("#menu").append(links);
 });
+
+ //table for categories
+ var tb = '';
+  $.each(result.categories,function(key,value){
+var tb = '';
+tb += ' <tr><td>'+value.categoryId+'</td><td>'+value.categoryName+'</td>></tr>';
+$("#ctg").append(tb);
+});
+
+ //option categories list
+ var op = '';
+  $.each(result.categories,function(key,value){
+var op = '';
+op += ' <option data-id="'+value.categoryId+'">'+value.categoryName+'</option></select>';
+$("#categories").append(op);
+});
+
 
 $.each(result.categories["0"].categoryProductList,function(key,value){
  var pro = '';
