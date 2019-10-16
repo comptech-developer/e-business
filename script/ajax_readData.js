@@ -46,7 +46,7 @@ $("#ctg").append(tb);
  var op = '';
   $.each(result.categories,function(key,value){
 var op = '';
-op += ' <option data-id="'+value.categoryId+'">'+value.categoryName+'</option></select>';
+op += ' <option data-catid="'+value.categoryId+'">'+value.categoryName+'</option></select>';
 $("#categories").append(op);
 });
 

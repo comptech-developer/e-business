@@ -139,7 +139,7 @@ $("#add").on('click', function(e){
     var profl = {
 
         productName:$('#productname').val(),
-      shopId:1,
+      shopId:pdata.shopStatus.shopId,
       quantity:$('#quantity').val(),
       sellingPrice:$('#price').val(),
       categoryId:$('#categories').val(),
