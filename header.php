@@ -49,7 +49,7 @@
 <!-- custom javascript -->
  <script type="text/javascript" src="js/percircle.js"></script>
  <script src="js/script.js" type="text/javascript"></script>
-   <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+   <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 
    <script type="text/javascript" src="//code.jquery.com/ui/1.11.1/jquery-ui.js">
 </script>
