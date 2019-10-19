@@ -25,7 +25,7 @@ dataType : 'json', // data type
 contentType: 'application/json',
 success : function(data) {
  
- alert('succesfully');
+// alert('succesfully');
  var prof = JSON.stringify(data);
    localStorage.setItem('prof',prof);
      
@@ -43,7 +43,7 @@ console.log(prof);
 
 },
 error: function(xhr, resp, text) {
-    alert('erro saving');
+   // alert('erro saving');
 console.log(xhr, resp, text);
 }
 })
@@ -76,7 +76,7 @@ success : function(result) {
 
 },
 error: function(xhr, resp, text) {
-    alert('erro saving');
+   // alert('erro saving');
 console.log(xhr, resp, text);
 }
 })
@@ -111,7 +111,7 @@ success : function(result) {
 
 },
 error: function(xhr, resp, text) {
-    alert('erro saving');
+   // alert('erro saving');
 console.log(xhr, resp, text);
 }
 })

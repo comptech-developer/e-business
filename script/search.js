@@ -12,7 +12,7 @@ $(document).ready(function(){
                                              }
               if(text ==''){ 
 
-              alert('weka data acha miyeyusho ')
+              //alert('weka data acha miyeyusho ')
                $("#result").html('');
                 $(".sh").hide();
 

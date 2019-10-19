@@ -39,7 +39,7 @@ $("#menu").append(links);
  var tb = '';
   $.each(result.categories,function(key,value){
 var tb = '';
-tb += ' <tr><td>'+value.categoryId+'</td><td>'+value.categoryName+'</td>></tr>';
+tb += ' <tr><td>'+value.id+'</td><td>'+value.categoryName+'</td>></tr>';
 $("#ctg").append(tb);
 });
 
@@ -47,7 +47,7 @@ $("#ctg").append(tb);
  var op = '';
   $.each(result.categories,function(key,value){
 var op = '';
-op += ' <option data-catid="'+value.categoryId+'">'+value.categoryName+'</option></select>';
+op += ' <option data-catid="'+value.id+'">'+value.categoryName+'</option></select>';
 $("#categories").append(op);
 });
 
@@ -230,7 +230,7 @@ $("#tagline5").append(specificmenu10);
  
 },
 error: function(xhr, resp, text) {
-    alert('erro saving');
+    //alert('erro saving');
 console.log(xhr, resp, text);
 }
 });
@@ -271,7 +271,7 @@ $("#recommended-items").append(recommended);
 });
 },
 error: function(xhr, resp, text) {
-    alert('erro recomendedproducts');
+    //alert('erro recomendedproducts');
 console.log(xhr, resp, text);
 }
 });
@@ -306,7 +306,7 @@ success:function(data){
 //$("#recommended-items").append(random);
 },
 error: function(xhr, resp, text) {
-    alert('erro recomendedproducts');
+    //alert('erro recomendedproducts');
 console.log(xhr, resp, text);
 }
 });

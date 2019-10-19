@@ -58,7 +58,7 @@ $('#divdata').html(read);
  });
         },
         error: function(xhr, resp, text) {
-    alert('erro saving');
+    //alert('erro saving');
 console.log(xhr, resp, text);
         }
  

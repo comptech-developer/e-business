@@ -65,7 +65,7 @@ contentType: 'application/json;charset=UTF-8',
 
 success : function(result) {
 // you can see the result from the console
- alert('login success');
+ //alert('login success');
 
  console.log(result);
  var objuser = JSON.stringify(result);
@@ -76,7 +76,7 @@ success : function(result) {
   var userid = result.login.userId;
   console.log(userid);
 
-  // for start the session
+  // for starting the session
     
                    $.ajax({
                 url: './session.php', // url where to submit the request
@@ -92,7 +92,7 @@ success : function(result) {
             });
 },
 error: function(xhr, resp, text) {
-    alert('erro saving');
+ //   alert('erro saving');
 console.log(xhr, resp, text);
 }
 })

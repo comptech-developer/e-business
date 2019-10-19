@@ -164,7 +164,7 @@ data: JSON.stringify(profl), // post data || get data
 dataType : 'json', // data type
 contentType: 'application/json',
 success : function(data) {
- alert('succesfully');
+ //alert('succesfully');
    console.log(data);
 
 },

@@ -75,7 +75,7 @@ contentType: 'application/json',
 success : function(result) {
 // you can see the result from the console
 // tab of the developer tools
-alert('succesfully saving you will get sms notification soon');
+//alert('succesfully saving you will get sms notification soon');
 //$('#display').html(result);
 //$('#display').load("verify-user");
 console.log(result);
@@ -92,7 +92,7 @@ window.location.assign('vrf-register');
     //('#pin').prepend(obj.id);
 },
 error: function(xhr, resp, text) {
-    alert('erro saving');
+    //alert('erro saving');
 console.log(xhr, resp, text);
 }
 });

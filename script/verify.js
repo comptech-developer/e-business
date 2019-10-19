@@ -31,7 +31,7 @@ dataType : 'json', // data type
 contentType: 'application/json',
 success : function(data) {
   console.log(data);
- alert('succesfully');
+ //alert('succesfully');
  var objvrf = JSON.stringify(data);
    localStorage.setItem('objvrf',objvrf);
      
@@ -43,7 +43,7 @@ window.location.assign('main');
 
 },
 error: function(xhr, resp, text) {
-    alert('erro saving');
+    //alert('erro saving');
 console.log(xhr, resp, text);
 }
 })

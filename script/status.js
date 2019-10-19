@@ -49,7 +49,7 @@ success : function(data) {
   console.log(data);
 },
 error: function(xhr, resp, text) {
-    alert('erro saving');
+   //lert('erro saving');
 console.log(xhr, resp, text);
 }
 })
@@ -100,7 +100,7 @@ success : function(data) {
   console.log(data);
 },
 error: function(xhr, resp, text) {
-    alert('erro saving');
+   //lert('erro saving');
 console.log(xhr, resp, text);
 }
 })
@@ -108,5 +108,16 @@ console.log(xhr, resp, text);
 
 });
 
+//checkinh shop   status
+
+var pdata = $.parseJSON(localStorage.getItem('objvrf'));
+
+ var shop = pdata.shopStatus.shopStatus;
+ var shopid  = pdata.shopStatus.shopId;
+
+ if(shop == false){
+
+  $('#shopstatus').hide();
+ }
 
 });

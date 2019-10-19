@@ -29,7 +29,7 @@ $("#shopproduct").append(links);
 
 },
 error: function(xhr, resp, text) {
-    alert('erro saving');
+   // alert('erro saving');
 console.log(xhr, resp, text);
 }
 })
@@ -67,7 +67,7 @@ $("#shopsold").append(links);
 
 },
 error: function(xhr, resp, text) {
-    alert('erro saving');
+   // alert('erro saving');
 console.log(xhr, resp, text);
 }
 })

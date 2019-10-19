@@ -180,6 +180,7 @@
 <span class=" badge badge-dark" id="deliverysize"  data-target="#myModal" data-toggle="modal"></span>
 <div  >Delivery</div>
 </div>
+<span id="shopstatus"><i class="fas fa-home"></i><a href="https://esota.herokuapp.com/CMS/shop/index">Shop</span>
 </div>
 </a>
 </div> <!-- col.// -->
