@@ -117,16 +117,17 @@ $(document).on('click', '.edit', function(e){
  $('#save').on('click',function(e){
  const urledit =  'https://268f5fb1.ngrok.io/shopeditproduct'; 
    e.preventDefault();
- 
+   var pdata = $.parseJSON(localStorage.getItem('objvrf'))
+ var cat = $('#categories option:selected').data('catid');
   var ed = {
        productId:$('#id').val(),
     productName:$('#productname').val(),
-    shopId:1,
+    shopId:pdata.shopStatus.shopId,
     quantity:$('#quantity').val(),
     sellingPrice:$('#price').val(),
-    categoryId:$('#categories').val(),
+    categoryId:cat,
     description:$('#description').val(),
-    countryId:1
+    countryId:pdata.user.countryId
 };
 // send ajax
 $.ajax({

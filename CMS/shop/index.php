@@ -136,6 +136,7 @@ $("#add").on('click', function(e){
             var nn = num[1];
   
               //console.log(numbers.slice(22))
+    var cat = $('#categories option:selected').data('catid');
   var pdata = $.parseJSON(localStorage.getItem('objvrf'));
 
     var profl = {
@@ -144,7 +145,7 @@ $("#add").on('click', function(e){
       shopId:pdata.shopStatus.shopId,
       quantity:$('#quantity').val(),
       sellingPrice:$('#price').val(),
-      categoryId:$('#categories').val(),
+      categoryId:cat,
       description:$('#description').val(),
       countryId:pdata.user.countryId,
      productImageDataList:[
