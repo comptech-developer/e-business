@@ -114,13 +114,21 @@ var pdata = $.parseJSON(localStorage.getItem('objvrf'));
 
  var shop = pdata.shopStatus.shopStatus;
  var shopid  = pdata.shopStatus.shopId;
-
+console.log(shop)
+console.log(shopid)
  if(shop == false){
 
    
   $('#shopstatus').hide();
 
-  console.log(huna duka);
+  var bb = 'huna duka';
+
+  console.log(bb);
+ }
+ if(shopid == 0){
+
+  console.log('huna');
+  
  }
 
 });
