@@ -117,7 +117,10 @@ var pdata = $.parseJSON(localStorage.getItem('objvrf'));
 
  if(shop == false){
 
+   
   $('#shopstatus').hide();
+
+  console.log(huna duka);
  }
 
 });

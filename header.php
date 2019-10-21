@@ -180,11 +180,24 @@
 <span class=" badge badge-dark" id="deliverysize"  data-target="#myModal" data-toggle="modal"></span>
 <div  >Delivery</div>
 </div>
-<span id="shopstatus"><i class="fas fa-home"></i><a href="https://esota.herokuapp.com/CMS/shop/index">Shop</span>
 </div>
 </a>
 </div> <!-- col.// -->
 
+<!-- for shop  status-->
+<div class="col-auto" id="shopstatus">
+<a href="/CMS/shop/index"class="widget-header dlv">
+<div class="icontext">
+<div class="icon-wrap" ><i class="text-danger icon-sm  fas fa-home"></i></div>
+<div class="text-wrap text-dark">
+<div  >Shop</div>
+</div>
+
+
+</div>
+</a>
+</div> <!-- col.// -->
+ 
 </div> <!-- widgets-wrap.// row.// -->
 </div> <!-- col.// -->
 </div> <!-- row.// -->
