@@ -65,6 +65,7 @@
                     <th>Description</th>
                     <th>Status</th>
                     <th>Category</th>
+                    <th>Image</th>
                     <th>Action</th>
                   </tr>
                   </thead>
