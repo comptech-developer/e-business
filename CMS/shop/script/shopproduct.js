@@ -1,6 +1,6 @@
  $(document).ready(function(){
-const url = 'https://268f5fb1.ngrok.io/shopproducts';  
-const urlsold = 'https://268f5fb1.ngrok.io/shopsoldproducts';
+const url = 'https://a0384310.ngrok.io/shopproducts';  
+const urlsold = 'https://a0384310.ngrok.io/shopsoldproducts';
 
   $('#save').hide();
     var profl = {
@@ -75,7 +75,7 @@ console.log(xhr, resp, text);
 
 //delete product
 $(document).on('click', '.delete', function(e){ 
-  const urldelete =  'https://268f5fb1.ngrok.io/shopdeleteproduct';
+  const urldelete =  'https://a0384310.ngrok.io/shopdeleteproduct';
   e.preventDefault();
   var del = {
       productId:$(this).data('id'),
@@ -115,7 +115,7 @@ $(document).on('click', '.edit', function(e){
 
  //save data
  $('#save').on('click',function(e){
- const urledit =  'https://268f5fb1.ngrok.io/shopeditproduct'; 
+ const urledit =  'https://a0384310.ngrok.io/shopeditproduct'; 
    e.preventDefault();
    var pdata = $.parseJSON(localStorage.getItem('objvrf'))
  var cat = $('#categories option:selected').data('catid');
