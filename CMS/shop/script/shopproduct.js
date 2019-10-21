@@ -18,11 +18,22 @@ contentType: 'application/json',
 success : function(data) {
  //alert('succesfully');
    console.log(data);
- 
+    for(var i =0 ; i<data.length;i++){
+      console.log(data[i].approvalStatus);
+      if(data[i].approvalStatus==false){
+      
+          $('#color').html('label label-success');
+
+      }else {
+         $('#color').html('label label-danger');
+
+   }
+   
+}
 
     $.each(data,function(key,value){
 var links = '';
-links += '<tr><td>'+value.id+'</td><td>'+value.productName+'</td><td>'+value.sellingPrice+'</td><td>'+value.stockSize+'</td><td>'+value.description+'</td><td class"label label-success">'+value.approvalStatus+'</td><td>'+value.categoryName+'</td><td><button class="btn btn-info btn-sm edit" data-id="'+value.id+'" data-pro="'+value.productName+'" data-sto="'+value.stockSize+'" data-sta="'+value.approvalStatus+'" data-cat="'+value.categoryName+'" data-de="'+value.description+'" data-pri="'+value.sellingPrice+'" >Edit</button>|<button class="btn btn-danger btn-sm delete" data-id="'+value.id+'">Delete</button></td></tr>';
+links += '<tr><td>'+value.id+'</td><td>'+value.productName+'</td><td>'+value.sellingPrice+'</td><td>'+value.stockSize+'</td><td>'+value.description+'</td><td id="color">'+value.approvalStatus+'</td><td>'+value.categoryName+'</td><td><img src="'+value.shopImage["0"].imageUrl+'" class="img-thumbnail" /></td><td><button class="btn btn-info btn-sm edit" data-id="'+value.id+'" data-pro="'+value.productName+'" data-sto="'+value.stockSize+'" data-sta="'+value.approvalStatus+'" data-cat="'+value.categoryName+'" data-de="'+value.description+'" data-pri="'+value.sellingPrice+'" >Edit</button>|<button class="btn btn-danger btn-sm delete" data-id="'+value.id+'">Delete</button></td></tr>';
 $("#shopproduct").append(links);
 });
 
@@ -61,7 +72,7 @@ success : function(data) {
 }
     $.each(data,function(key,value){
 var links = '';
-links += '<tr><td>'+value.id+'</td><td>'+value.productName+'</td><td>'+value.sellingPrice+'</td><td>'+value.itemSold+'</td><td>'+value.paymentTime+'</td><td class"label label-success">'+value.referenceNumber+'</td><td>'+value.availableStock+'</td><td>'+value.availableStock+'</td><td><button class="btn btn-success btn-sm edit" data-id="'+value.id+'"  >stock Inprogress   <i class="fa fa-spinner aria-hidden="true""></i></button></td></tr>';
+links += '<tr><td>'+value.id+'</td><td>'+value.productName+'</td><td>'+value.sellingPrice+'</td><td>'+value.itemSold+'</td><td>'+value.paymentTime+'</td><td class"label label-success">'+value.referenceNumber+'</td><td>'+value.availableStock+'</td><td><button class="btn btn-success btn-sm edit" data-id="'+value.id+'"  >stock Inprogress   <i class="fa fa-spinner aria-hidden="true""></i></button></td></tr>';
 $("#shopsold").append(links);
 });
 
