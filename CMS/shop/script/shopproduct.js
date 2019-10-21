@@ -61,7 +61,7 @@ success : function(data) {
 }
     $.each(data,function(key,value){
 var links = '';
-links += '<tr><td>'+value.id+'</td><td>'+value.productName+'</td><td>'+value.sellingPrice+'</td><td>'+value.itemSold+'</td><td>'+value.paymentTime+'</td><td class"label label-success">'+value.referenceNumber+'</td><td>'+value.availableStock+'</td><td><img src="" class="image-thumbnail" /><td><td><button class="btn btn-success btn-sm edit" data-id="'+value.id+'"  >stock Inprogress   <i class="fa fa-spinner aria-hidden="true""></i></button></td></tr>';
+links += '<tr><td>'+value.id+'</td><td>'+value.productName+'</td><td>'+value.sellingPrice+'</td><td>'+value.itemSold+'</td><td>'+value.paymentTime+'</td><td class"label label-success">'+value.referenceNumber+'</td><td>'+value.availableStock+'</td><td><img src="'+value.shopImage["0"].imageUrl+'" class="image-thumbnail" /></td><td><button class="btn btn-success btn-sm edit" data-id="'+value.id+'"  >stock Inprogress   <i class="fa fa-spinner aria-hidden="true""></i></button></td></tr>';
 $("#shopsold").append(links);
 });
 
