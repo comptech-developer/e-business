@@ -55,7 +55,7 @@ $(document).ready(function() {
 // jquery end
 </script>
 <style>
-.container { overflow-y: scroll;}
+.container { overflow-x: hidden;}
 </style>
 
 </head>
