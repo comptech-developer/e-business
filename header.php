@@ -140,7 +140,7 @@
    <br />
 
 </div> <!-- col.// -->
-<div class="col-lg-5 col-sm-8">
+<div class="col-lg-6 col-sm-8">
 <div class="widgets-wrap float-right row no-gutters py-1">
 <div class="col-auto">
 <div class="widget-header dropdown">

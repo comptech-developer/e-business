@@ -64,7 +64,7 @@
            
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="../logout" class="dropdown-toggle" data-toggle="dropdown">
               <i  class="fa  fa-sign-out"></i>
               <span class="hidden-xs"><b>logout</b></span>
             </a>
@@ -87,7 +87,7 @@
           <img src="../dist/img/avatar-2.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Fname Lname</p>
+          <p id="userFullName"></p>
           <a href="#"><i class="fa fa-circle text-success"></i> Shop</a>
         </div>
       </div>

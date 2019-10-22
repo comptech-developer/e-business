@@ -40,6 +40,7 @@
 <!--<script src="script/addproduct.js"></script>-->
 <script src="script/shopproduct.js"></script>
 <script src="../../script/ajax_readData.js"></script>
+<script src="../../script/current-user.js"></script>
 
 </body>
 </html>
