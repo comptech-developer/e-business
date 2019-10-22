@@ -140,7 +140,7 @@
    <br />
 
 </div> <!-- col.// -->
-<div class="col-lg-6 col-sm-8">
+<div class="col-lg-5 col-sm-8">
 <div class="widgets-wrap float-right row no-gutters py-1">
 <div class="col-auto">
 <div class="widget-header dropdown">
@@ -185,8 +185,7 @@
 </div> <!-- col.// -->
 
 <!-- for shop  status-->
-<div class="col-auto" id="shopstatus">
-<a href="/CMS/shop/index"class="widget-header dlv">
+<a href="/CMS/shop/index"class="widget-header dlv" id="shopstatus">
 <div class="icontext">
 <div class="icon-wrap" ><i class="text-danger icon-sm  fas fa-home"></i></div>
 <div class="text-wrap text-dark">
@@ -196,7 +195,7 @@
 
 </div>
 </a>
-</div> <!-- col.// -->
+ 
  
 </div> <!-- widgets-wrap.// row.// -->
 </div> <!-- col.// -->
