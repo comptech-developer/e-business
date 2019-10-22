@@ -87,7 +87,23 @@ var obj1 = JSON.stringify(result);
    $('#vr').append(localStorage.getItem('obj1'));
   console.log(localStorage.getItem('obj1'));
 //console.log(result);
-window.location.assign('vrf-register');
+
+  var userid = result.registered.userId;
+
+//for sesseion
+    $.ajax({
+                url: './session.php', // url where to submit the request
+                type : "POST", // type of action POST || GET
+                 data: {'id':userid},
+                dataType : 'text',
+
+                success:function(data){
+                window.location.assign('vrf-register');
+                    console.log(data);
+                }
+
+            });
+
    
     //('#pin').prepend(obj.id);
 },

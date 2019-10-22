@@ -1,3 +1,12 @@
+<?php
+ require('../../session.php');
+ if(isset($_SESSION['id'])){
+
+//echo $_SESSION['id'];
+ }  else { header('location:../../index');  }
+    
+  ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -63,7 +72,7 @@
           <!-- Tasks: style can be found in dropdown.less -->
            
           <!-- User Account: style can be found in dropdown.less -->
-          <li class="dropdown user user-menu">
+          <li class="user user-menu">
             <a href="../../logout">
               <i  class="fa  fa-sign-out"></i>
               <span class="hidden-xs"><b>logout</b></span>
