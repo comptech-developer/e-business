@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
  
-    const urlcountry ="https://a0384310.ngrok.io/country"; 
-    const urlregister ="https://a0384310.ngrok.io/registration"; 
+    const urlcountry ="https://0afd2954.ngrok.io/country"; 
+    const urlregister ="https://0afd2954.ngrok.io/registration"; 
  
     event.preventDefault();
     //http://53177a43.ngrok.io/country

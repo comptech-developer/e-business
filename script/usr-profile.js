@@ -1,9 +1,9 @@
 $(document).ready(function(){  
 
  
-const url = 'https://a0384310.ngrok.io/userinformation';
-const urlcredit = 'https://a0384310.ngrok.io/creditlist';
-const urlpurchase = 'https://a0384310.ngrok.io/allpurchases';
+const url = 'https://0afd2954.ngrok.io/userinformation';
+const urlcredit = 'https://0afd2954.ngrok.io/creditlist';
+const urlpurchase = 'https://0afd2954.ngrok.io/allpurchases';
  
    var pdata = $.parseJSON(localStorage.getItem('objvrf'));
  
