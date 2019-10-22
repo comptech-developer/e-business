@@ -55,7 +55,7 @@ $(document).ready(function() {
 // jquery end
 </script>
 <style>
-.container {overflow-x: hidden; overflow-y: auto;}
+.container { overflow-y: scroll;}
 </style>
 
 </head>
@@ -150,8 +150,7 @@ $id = $_POST['id'];
 
 <!-- ========================= SECTION SUBSCRIBE ========================= -->
 <section class="section-subscribe bg-dark padding-y-lg">
-<div class="container">
-</div> <!-- container // -->
+  <!-- container // -->
 </section>
 <!-- ========================= SECTION SUBSCRIBE END.//========================= -->
 
