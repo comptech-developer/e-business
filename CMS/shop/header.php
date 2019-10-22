@@ -64,7 +64,7 @@
            
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
-            <a href="../../logout" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="../../logout">
               <i  class="fa  fa-sign-out"></i>
               <span class="hidden-xs"><b>logout</b></span>
             </a>
