@@ -55,7 +55,10 @@ $(document).ready(function() {
 // jquery end
 </script>
 <style>
-.container { overflow-x: hidden;}
+ html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 </style>
 
 </head>
