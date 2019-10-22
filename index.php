@@ -54,6 +54,9 @@ $(document).ready(function() {
 }); 
 // jquery end
 </script>
+<style>
+.container {overflow-x: hidden; overflow-y: auto;}
+</style>
 
 </head>
 <body>
