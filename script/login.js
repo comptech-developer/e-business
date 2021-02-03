@@ -3,54 +3,17 @@
     
  
     const urlcoutry ="https://a0384310.ngrok.io/country"; 
-    const urllogin ="https://a0384310.ngrok.io/login"; 
- 
-    $("#search-box").keyup(function(){
-        var co = { countryName:$('#search-box').val()}
-        $.ajax({
-        type: "POST",
-        url: urlcoutry,
-        data:JSON.stringify(co),
-        contentType: 'application/json',
-        beforeSend: function(){
-            $("#search-box").css("background","#FFF url(LoaderIcon.gif) no-repeat 165px");
-        },
-        success: function(data){
-            var object = JSON.stringify(data);
-      localStorage.setItem('object',object);
-
-  console.log(localStorage.getItem('object'));
-
-     var pdata = $.parseJSON(localStorage.getItem('object'));
-  $('#countryId').val(pdata.country[0].countryId);
-  $('#phoneNumber').val(pdata.country[0].countryCode);
-  console.log(pdata.country[0].countryId)
-            $.each(data.country,function(key,value){
-            $("#suggesstion-box").show();
-            $("#suggesstion-box").html('<li class="list-group-item active" >'+value.countryName+'</li>');
-            $('#countryId').html('');
-            $("#search-box").css("background","#FFF");
-
-            console.log(data);
-        });
-        }
-        });
-    
-
-
- $('#suggesstion-box').on('click', 'li', function() {
-  var click_text = $(this).text().split('|');
-  $('#search-box').val($.trim(click_text[0]));
-  $("#suggesstion-box").html('');
- });
+    const urllogin ="http://localhost/biashara/public/api/login"; 
+  
  //listen submit event
 $("#submit").on('click', function(){
     event.preventDefault();
-      var str = $('#phoneNumber').val();
+    alert('click');
+      
 var post = {
 
-countryId:$('#countryId').val(),
-phoneNumber:(str.substr(4)),
+email:$('#email').val(),
+password:$('#password').val()
  
 
 };
@@ -70,10 +33,9 @@ success : function(result) {
  console.log(result);
  var objuser = JSON.stringify(result);
       localStorage.setItem('objuser',objuser);
-      sessionStorage.setItem('objuser',objuser);
   console.log(localStorage.getItem('objuser'));
   
-  var userid = result.login.userId;
+  var userid = result.token.user.id;
   console.log(userid);
 
   // for starting the session
@@ -85,7 +47,7 @@ success : function(result) {
                 dataType : 'text',
 
                 success:function(data){
-                 window.location.assign('vrf-login');
+                 window.location.assign('main');
                     console.log(data);
                 }
 
@@ -97,5 +59,5 @@ console.log(xhr, resp, text);
 }
 })
  });
-});
+
 });

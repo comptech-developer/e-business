@@ -1,11 +1,4 @@
-  <?php
- require('session.php');
- if(isset($_SESSION['id'])){
 
-//echo $_SESSION['id'];
- }  else { header('location:index');  }
-    
-  ?>
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -13,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Bootstrap-ecommerce by Vosidiy">
 
-<title>Esota </title>
+<title>E-biashara </title>
 
 <link rel="shortcut icon" type="image/x-icon" href="images/esota.ico">
 
@@ -51,6 +44,8 @@
  <script src="js/script.js" type="text/javascript"></script>
    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
    <script type="text/javascript" src="//code.jquery.com/ui/1.11.1/jquery-ui.js">
 </script>
 
@@ -86,6 +81,10 @@
 .container-fluid{
   width: 90%;
 }
+ .bts{
+    display: inline-block;
+    vertical-align: top;
+}
   </style>
 
 </head>
@@ -110,7 +109,7 @@
 </ul>
 <ul class="navbar-nav">
 
-<li class="nav-item"><a href="mailto:Helpcenter@esota.com" class="nav-link" id="delivery-detail" > helpcenter@esota.com  </a></li>
+<li class="nav-item"><a href="mailto:Helpcenter@e-biashara.com" class="nav-link" id="delivery-detail" > helpcenter@e-biashara.com  </a></li>
 
 </ul> <!-- navbar-nav.// -->
 </div> <!-- collapse.// -->
@@ -184,13 +183,15 @@
 </a>
 </div> <!-- col.// -->
 
+<!-- <a href="#" id="shop">shop</a>  -->
 <!-- for shop  status-->
 <div class="col-auto" id="shopstatus">
-<a href="/CMS/shop/index"class="widget-header dlv">
+<a href="#"class="widget-header dlv">
 <div class="icontext">
-<div class="icon-wrap" ><i class="text-danger icon-sm  fas fa-home"></i></div>
+<div class="icon-wrap" ><i class="text-danger icon-sm  fas fa-shopping-cart"></i></div>
 <div class="text-wrap text-dark">
-<div  >Shop</div>
+<span class=" badge badge-dark" id="cartsize"  ></span>
+<div  >Cart</div>
 </div>
 
 

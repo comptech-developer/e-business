@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Bootstrap-ecommerce by Vosidiy">
 
-<title>Esota </title>
+<title>E-baishara </title>
 
 <link rel="shortcut icon" type="image/x-icon" href="images/esota.ico">
 
@@ -132,20 +132,37 @@ $(document).ready(function() {
 <input type="email" id="email" value="" class="form-control" placeholder="">
 <small class="form-text text-muted">We'll never share your email with anyone else.</small>
 </div> <!-- form-group end.// -->
-
+<div class="form-group">
+<label>PhoneNumber</label>
+<input type="email" id="phoneNumber" value="" class="form-control" placeholder="">
+<small class="form-text text-muted">We'll never share your phone with anyone else.</small>
+</div> 
 
 <div class="form-row">
 <div class="form-group col-md-6">
-<label>Country</label>
-<input  type="text" name="countryName"  id="search-box" class="form-control"  /> 
+<label>City</label>
+<input  type="text" name="countryName"  id="city" class="form-control"  /> 
 <input type="hidden" name="countryId" value="" id="countryId" > 
 <div id="suggesstion-box"></div>     
 </div> <!-- form-group end.// -->
 <div class="form-group col-md-6">
-<label>Phone Number</label>
-<input type="text" id="phoneNumber" value="" class="form-control js-typeahead" />
+<label>Street</label>
+<input type="text" id="street" value="" class="form-control js-typeahead" />
 </div> <!-- form-group end.// -->
 </div> <!-- form-row.// -->
+
+
+<div class="form-row">
+<div class="form-group col-md-6">
+<label>Password</label>
+<input  type="password" name="password"  id="password" class="form-control"  /> 
+<div id="suggesstion-box"></div>     
+</div> <!-- form-group end.// -->
+<div class="form-group col-md-6">
+<label>Confirm Password</label>
+<input type="password" id="password_confirmation" value="" class="form-control js-typeahead" />
+</div> <!-- form-group end.// -->
+</div>
 
 <div class="form-group">
 <button type="submit" id="submit" class="btn btn-danger btn-block btn"> Register  </button>
@@ -247,6 +264,7 @@ Copyright &copy  <br>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/js/mdb.min.js"></script>
  <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+ 
 <script type="text/javascript" src="script/reg.js"></script>
 <script>
 

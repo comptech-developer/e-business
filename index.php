@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="Bootstrap-ecommerce by Vosidiy">
 
-<title>Esota </title>
+<title>E-biashara </title>
 
 <link rel="shortcut icon" type="image/x-icon" href="images/esota.ico">
 
@@ -60,7 +60,7 @@ $(document).ready(function() {
 <header class="section-header">
 <nav class="navbar navbar-expand-lg navbar-light">
 <div class="container">
-<a class="navbar-brand" href="#"><img class="logo" src="images/esotalogo.png" alt="alibaba style e-commerce html template file" title="alibaba e-commerce html css theme"></a>
+<a class="navbar-brand" href="main"><img class="logo" src="images/esotalogo.png" alt="alibaba style e-commerce html template file" title="alibaba e-commerce html css theme"></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTop" aria-controls="navbarTop" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
@@ -91,7 +91,7 @@ $(document).ready(function() {
 </ul>
 <ul class="navbar-nav">
 
-<li class="nav-item"><a href="mailto:Helpcenter@esota.com" class="nav-link" > helpcenter@esota.com  </a></li>
+<li class="nav-item"><a href="mailto:Helpcenter@esota.com" class="nav-link" > helpcenter@e-biashara.com  </a></li>
 
 </ul> <!-- navbar-nav.// -->
 </div> <!-- collapse.// -->
@@ -111,14 +111,14 @@ $(document).ready(function() {
 <article class="card-body">
  
 <div class="form-group">
-<label>Cuontry</label>
- <input  type="text" name="countryName"  id="search-box" class="form-control"  /> 
+<label>Email</label>
+ <input  type="text" name="email"  id="email" class="form-control" required=""  /> 
 <input type="hidden" name="countryId" value="" id="countryId"> 
 <div id="suggesstion-box"></div> 
 </div> <!-- form-group end.// -->
 <div class="form-group">
-<label>Phone Number</label>
-<input type="text" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="">
+<label>Password</label>
+<input type="password" id="password" name="password" class="form-control" placeholder="">
  
 </div> <!-- form-group end.// -->
 <div class="form-group">

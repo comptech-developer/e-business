@@ -5,8 +5,19 @@ $("#logout").on('click', function(){
   
 	localStorage.clear();
 	sessionStorage.clear();
+      $.ajax({
+                url: './logout.php', // url where to submit the request
+                type : "POST", // type of action POST || GET
+                dataType : 'text',
 
-    window.location.replace('index');
+                success:function(data){
+                  window.location.replace('main');
+                    console.log(data);
+                }
+
+            });
+
+   
 });
 
 });

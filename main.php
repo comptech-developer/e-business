@@ -1,5 +1,8 @@
 
 <?php  include('header.php');  ?>
+
+ 
+
 <!-- ========================= SECTION MAIN ========================= -->
 <section class="section-main bg padding-y-sm">
 <div class="container-fluid">
@@ -254,7 +257,9 @@
 
 <div class="row" id="recommended-items">
   
-</div> <!-- row.// -->
+</div>
+ <div class="text-center"><p class="btn btn-outline-danger btn-sm show-more5">Explore more</p></div>
+ <!-- row.// -->
 
 
 
@@ -373,20 +378,41 @@
   
   <div id="myModal" class="modal fade"  tabindex="-1" role="dialog" aria-labelledby="myModal"
   aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-xl">
 
     <!-- Modal content-->
     <div class="modal-content">
     
       <div class="modal-body">
-          <table class="table">
-            <thead class="black white-text"><tr><th style="width: 200px;">Location</th><th style="width: 200px;">Address</th><th style="width: 300px;">delivery Time</th><th>Reference Number</th></tr></thead>
-            <tbody id="app">
-              
-            </tbody>
-          </table>
+           <div class=" col-md-offset-1">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th class="text-center">Price</th>
+                    <th class="text-center">Total</th>
+                    <th> </th>
+                </tr>
+                </thead>
+                <tbody id="cart-items">
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td>
+        <a href="javascript:;" class="btn btn-danger" data-cesta-feira-clear-basket>Clear Cart</a>
+                  </td>
+                    <td>  </td>
+                    <td>Total</td>
+                    <td class="text-right" id="total-value"><strong></strong></td>
+                    <td>  </td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
       </div>
       <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-dismiss="modal" id="checkout" style="margin-right: 80px;">Checkout</button>
         <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -420,6 +446,8 @@
   </div>
 </div>
 
+
+ 
 <!--end-->
 <?php
 

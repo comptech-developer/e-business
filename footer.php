@@ -60,7 +60,7 @@
 <div class="col-sm-6">
 <p class="text-md-right text-white-50">
 Copyright &copy <?php echo date('Y'); ?> <br>
-<a href="" class="text-white-50">Esota ltd</a>
+<a href="" class="text-white-50">E-biashara ltd</a>
 </p>
 </div>
 </section> <!-- //footer-top -->
@@ -70,16 +70,19 @@ Copyright &copy <?php echo date('Y'); ?> <br>
 
 <!--ajax link-->
 <script src="script/ajax_readData.js"></script>
+<!--
 <script src="script/search.js" ></script>
  <script type="text/javascript" src="script/status.js"></script>
  <script type="text/javascript" src="script/delivery.js"></script>
-   
-<script type="text/javascript" src="script/logout.js"></script>
+
+
 <script type="text/javascript" src="script/current-user.js"></script>
 <script type="text/javascript" src="script/usr-profile.js"></script>
 <script type="text/javascript" src="script/profile.js"></script>
-<script type="text/javascript" src="script/addcart.js"></script>
-
+-->
+<script type="text/javascript" src="script/cart.js"></script>
+<script type="text/javascript" src="script/logout.js"></script>
+<script type="text/javascript" src="script/checkout.js"></script>
 
  
  
@@ -89,9 +92,12 @@ Copyright &copy <?php echo date('Y'); ?> <br>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.5/js/mdb.min.js"></script>
-    
  
-        
+ <script >
+ 	 
+
+ </script>
+     
 
 </body>
 </html>
