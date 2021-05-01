@@ -1,9 +1,11 @@
 	//http://localhost:8080/login ->http://localhost:9000/additemtocart
  $(document).ready(function(){
     
- 
-    const urlcoutry ="https://a0384310.ngrok.io/country"; 
-    const urllogin ="http://localhost/biashara/public/api/login"; 
+ var baseUrl = 'http://3.129.253.11/business/public/api';
+
+          
+    const urlcoutry = baseUrl + "/country"; 
+    const urllogin =  baseUrl +"/login"; 
   
  //listen submit event
 $("#submit").on('click', function(){

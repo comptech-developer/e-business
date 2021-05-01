@@ -1,10 +1,13 @@
 $(document).ready(function(){
 
- 
-const Url= 'http://localhost/biashara/public/api/category';
-const Url2 = 'http://localhost/biashara/public/api/product';
-const Url3 = 'http://localhost/biashara/public/api/product';
-const Url4 = 'http://localhost/biashara/public/api/product';
+  var baseUrl = 'http://3.129.253.11/business/public/api';
+  
+const Url=  baseUrl +"/category";
+const Url2 = baseUrl +"/product";
+const Url3 = baseUrl +"/product";
+const Url4 = baseUrl +"/product";
+
+console.log(baseUrl);
  
 //initialise function
  
@@ -109,7 +112,7 @@ type : "GET", // type of action POST || GET
 dataType : 'json', // data type
 contentType: 'application/json',
 success : function(result) {
-  console.log(result);
+  
 $.each(result.data,function(key,value){
   if(value.category_id == 2)
   {
@@ -118,7 +121,7 @@ $.each(result.data,function(key,value){
 
   pro += '<div class="col-md-3 vitu " >';
  pro += '<figure class="card card-sm card-product">';
-pro  += '<div class="img-wrap"><img src="http://localhost/biashara/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
+pro  += '<div class="img-wrap"><img src="http://3.129.253.11/business/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
 pro += '<figcaption class="info-wrap text-center">';
 pro += '<h6 class="title text-truncate"><a href="#"  class="detail" data-id="'+value.product_id+'" >'+value.name+' </a></h6>';
 pro += '<strong>'+value.currencyAbbreviation+' '+value.selling_price+'</strong>';
@@ -151,7 +154,7 @@ var prod = '';
 //populate to html product list
  prod += '<div class="col-md-3 vitu1 " >';
  prod += '<figure class="card card-sm card-product">';
-prod += '<div class="img-wrap"><img src="http://localhost/biashara/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
+prod += '<div class="img-wrap"><img src="http://3.129.253.11/business/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
 prod += '<figcaption class="info-wrap text-center">';
 prod += '<h6 class="title text-truncate"><a href="#"  class="detail" data-id="'+value.product_id+'" >'+value.name+' </a></h6>';
 prod += '<strong>'+value.currencyAbbreviation+' '+value.selling_price+'</strong>';
@@ -186,7 +189,7 @@ var pr = '';
 //populate to html product list
    pr += '<div class="col-md-3 vitu2 " >';
  pr += '<figure class="card card-sm card-product">';
-pr += '<div class="img-wrap"><img src="http://localhost/biashara/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
+pr += '<div class="img-wrap"><img src="http://3.129.253.11/business/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
 pr += '<figcaption class="info-wrap text-center">';
 pr += '<h6 class="title text-truncate"><a href="#"  class="detail" data-id="'+value.product_id+'" >'+value.name+' </a></h6>';
 pr += '<strong>'+value.currencyAbbreviation+' '+value.selling_price+'</strong>';
@@ -212,7 +215,7 @@ $.each(result.data,function(key,value){
 var prod = '';
   prod += '<div class="col-md-3 vitu3">';
   prod+=  '<figure class="card card-sm card-product">';
-prod += '<div class="img-wrap"><img src="http://localhost/biashara/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
+prod += '<div class="img-wrap"><img src="http://3.129.253.11/business/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
   prod += '<figcaption class="info-wrap text-center">';
 prod += '<h6 class="title text-truncate"><a href="#" class="detail" class="detail" data-id="'+value.product_id+'">'+value.name+' </a></h6>';
 prod += '<strong>'+value.currencyAbbreviation+' '+value.selling_price+'</strong>';
@@ -239,7 +242,7 @@ var prod = '';
 //populate to html product list
   prod += '<div class="col-md-3 vitu4">';
   prod+=  '<figure class="card card-sm card-product">';
-prod += '<div class="img-wrap"><img src="http://localhost/biashara/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
+prod += '<div class="img-wrap"><img src="http://3.129.253.11/business/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
 prod += '<figcaption class="info-wrap text-center">';
 prod += '<h6 class="title text-truncate"><a href="#"  class="detail" class="detail" data-id="'+value.product_id+'" >'+value.name+' </a></h6>';
 prod += '<strong>'+value.currencyAbbreviation+' '+value.selling_price+'</strong>';

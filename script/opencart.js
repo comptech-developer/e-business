@@ -1,6 +1,9 @@
 $(document).ready(function(){  
 
-const url = 'http://86fa0aa6.ngrok.io/cart';
+   var baseUrl = 'http://3.129.253.11/business/public/api';
+  const urlold = baseUrl +"/district";
+
+const url = baseUrl +"/cart";
    var pdata = $.parseJSON(localStorage.getItem('objuser'));
  
   

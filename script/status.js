@@ -1,8 +1,10 @@
 $(document).ready(function(){
 
- 
-const urldelivery = 'https://a0384310.ngrok.io/deliverylist';
-const urlpending = 'https://a0384310.ngrok.io/pendingreferencelist';
+  var baseUrl = 'http://3.129.253.11/business/public/api';
+  const urlold = baseUrl +"/district";
+
+const urldelivery =  baseUrl +"/deliverylist";
+const urlpending =  baseUrl +"/pendingreferencelist";
  
 var pdata = $.parseJSON(localStorage.getItem('objvrf'));
 

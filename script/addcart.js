@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
 //listen submit event
-const url = 'http://63edfcaf.ngrok.io/additemtocart';
+var baseUrl = 'http://3.129.253.11/business/public/api';
+const url = baseUrl +"/additemtocart";
   var pdata = $.parseJSON(sessionStorage.getItem('objuser'));
  $('#exampleModal').on('show.bs.modal', function(e) {
   var product = $(e.relatedTarget).data('id');

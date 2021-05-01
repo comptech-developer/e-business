@@ -1,7 +1,9 @@
 $(document).ready(function(){ 
    
- 
-  const urlVerify ="https://a0384310.ngrok.io/verify"; 
+  var baseUrl = 'http://3.129.253.11/business/public/api';
+  const urlold = baseUrl +"/district";
+
+  const urlVerify = baseUrl +"/verify"; 
  
   
    var pdata = $.parseJSON(localStorage.getItem('objuser'));

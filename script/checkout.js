@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-
+  var baseUrl = 'http://3.129.253.11/business/public/api';
+const url = baseUrl +"/district";
   
 
  if(localStorage.getItem('data') == null)
@@ -34,7 +35,7 @@ $(document).ready(function(){
 }
 
 $.ajax({
-url: 'http://localhost/biashara/public/api/district', // url where to submit the request
+url: url, // url where to submit the request
 type : "GET", // type of action POST || GET // post data || get data
 dataType : 'json', // data type
 contentType: 'application/json',

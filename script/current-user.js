@@ -1,7 +1,10 @@
 $(document).ready(function(){ 
  
 
-  const url_product= "https://a0384310.ngrok.io/productdetails";
+  var baseUrl = 'http://3.129.253.11/business/public/api';
+  
+
+  const url_product= baseUrl +"/productdetails";
  
  load_curren_user()
  

@@ -1,6 +1,9 @@
 $(document).ready(function(){
  
-  const urlsearch ="https://a0384310.ngrok.io/search"; 
+  var baseUrl = 'http://3.129.253.11/business/public/api';
+  const urlold = baseUrl +"/district";
+
+  const urlsearch =baseUrl +"/search"; 
  
    var pdata = $.parseJSON(localStorage.getItem('object'));
     $("#search").keyup(function(e){

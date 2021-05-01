@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
- 
-    const urlregister ="http://localhost/biashara/public/api/register"; 
+    var baseUrl = 'http://3.129.253.11/business/public/api';
+    const urlregister =baseUrl +"/register"; 
  
    
 
