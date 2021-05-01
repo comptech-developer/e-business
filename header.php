@@ -120,7 +120,7 @@
 <div class="container">
 <div class="row-sm align-items-center">
 
-<div class="col-lg-7 col-sm-9">
+<div class="col-lg-6 col-sm-9">
 
 <div class="input-group w-100">
 <select class="custom-select"  name="category_name">
@@ -139,7 +139,7 @@
    <br />
 
 </div> <!-- col.// -->
-<div class="col-lg-5 col-sm-8">
+<div class="col-lg-6 col-sm-8">
 <div class="widgets-wrap float-right row no-gutters py-1">
 <div class="col-auto">
 <div class="widget-header dropdown">

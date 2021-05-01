@@ -54,6 +54,12 @@ $(document).ready(function() {
 }); 
 // jquery end
 </script>
+<style>
+ html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+</style>
 
 </head>
 <body>
@@ -147,8 +153,7 @@ $id = $_POST['id'];
 
 <!-- ========================= SECTION SUBSCRIBE ========================= -->
 <section class="section-subscribe bg-dark padding-y-lg">
-<div class="container">
-</div> <!-- container // -->
+  <!-- container // -->
 </section>
 <!-- ========================= SECTION SUBSCRIBE END.//========================= -->
 

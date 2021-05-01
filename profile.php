@@ -58,9 +58,7 @@
 </ul>
 <div class="tab-content card pt-5" id="myTabContentJust">
   <div class="tab-pane fade show active" id="home-just" role="tabpanel" aria-labelledby="home-tab-just">
-    <div class="card">
-
-      <div class="card-body">
+     
    
     <table class="table table-hover table-fixed">
       <thead class="black white-text"><tr><th>Product Name</th><th>Selling Price</th><th>Fee Amount</th><th>Reference Number</th><th>paymentStatus</th></tr></thead>
@@ -68,8 +66,7 @@
         
       </tbody>
     </table>
-  </div>
-  </div>
+   
   </div>
   <div class="tab-pane fade" id="profile-just" role="tabpanel" aria-labelledby="profile-tab-just">
     <h3 class="text-center">credit list</h3>

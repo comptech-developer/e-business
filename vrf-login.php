@@ -59,6 +59,11 @@ $(document).ready(function() {
 #country-list li{padding: 10px; background: #f0f0f0; border-bottom: #bbb9b9 1px solid;}
 #country-list li:hover{background:#ece3d2;cursor: pointer;}
 #search-box{padding: 10px;border: #a8d4b1 1px solid;border-radius:4px;}
+ html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
 </style>
 
 </head>
