@@ -1,14 +1,14 @@
 	//http://localhost:8080/login ->http://localhost:9000/additemtocart
  $(document).ready(function(){
     
- var baseUrl = 'http://3.129.253.11/business/public/api';
+ var baseUrl = 'http://13.235.2.236/ecomApp/public/api';
 
           
     const urlcoutry = baseUrl + "/country"; 
     const urllogin =  baseUrl +"/login"; 
   
  //listen submit event
-$("#submit").on('click', function(){
+$("#submit").on('click', function(event){
     event.preventDefault();
     alert('click');
       
@@ -19,18 +19,17 @@ password:$('#password').val()
  
 
 };
+console.log(JSON.stringify(post));
 // send ajax
 $.ajax({
 url: urllogin, // url where to submit the request
 type : "POST", // type of action POST || GET
 data: JSON.stringify(post), // post data || get data
 dataType : 'json', // data type
-contentType: 'application/json;charset=UTF-8',
-   
-
+contentType: 'application/json;',
 success : function(result) {
 // you can see the result from the console
- //alert('login success');
+ alert('login success');
 
  console.log(result);
  var objuser = JSON.stringify(result);
@@ -57,7 +56,7 @@ success : function(result) {
 },
 error: function(xhr, resp, text) {
  //   alert('erro saving');
-console.log(xhr, resp, text);
+ console.log(xhr, resp, text);
 }
 })
  });

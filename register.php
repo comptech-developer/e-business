@@ -101,7 +101,7 @@ $(document).ready(function() {
 </ul>
 <ul class="navbar-nav">
 
-<li class="nav-item"><a href="mailto:Helpcenter@esota.com" class="nav-link" > helpcenter@esota.com  </a></li>
+<li class="nav-item"><a href="mailto:Helpcenter@esota.com" class="nav-link" > helpcenter@ecom.com  </a></li>
 
 </ul> <!-- navbar-nav.// -->
 </div> <!-- collapse.// -->

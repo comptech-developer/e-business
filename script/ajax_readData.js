@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  var baseUrl = 'http://3.129.253.11/business/public/api';
+  var baseUrl = 'http://13.235.2.236/ecomApp/public/api';
   
 const Url=  baseUrl +"/category";
 const Url2 = baseUrl +"/product";
@@ -121,7 +121,7 @@ $.each(result.data,function(key,value){
 
   pro += '<div class="col-md-3 vitu " >';
  pro += '<figure class="card card-sm card-product">';
-pro  += '<div class="img-wrap"><img src="http://3.129.253.11/business/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
+pro  += '<div class="img-wrap"><img src="http://13.235.2.236/ecomApp/public/uploads/'+value.image +'" width="250px" height="150px" class="img-fluid"></div>';
 pro += '<figcaption class="info-wrap text-center">';
 pro += '<h6 class="title text-truncate"><a href="#"  class="detail" data-id="'+value.product_id+'" >'+value.name+' </a></h6>';
 pro += '<strong>'+value.currencyAbbreviation+' '+value.selling_price+'</strong>';
@@ -154,7 +154,7 @@ var prod = '';
 //populate to html product list
  prod += '<div class="col-md-3 vitu1 " >';
  prod += '<figure class="card card-sm card-product">';
-prod += '<div class="img-wrap"><img src="http://3.129.253.11/business/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
+prod += '<div class="img-wrap"><img src="http://13.235.2.236/ecomApp/public/public/uploads/'+value.image +'" width="250px" height="150px" class="img-fluid"></div>';
 prod += '<figcaption class="info-wrap text-center">';
 prod += '<h6 class="title text-truncate"><a href="#"  class="detail" data-id="'+value.product_id+'" >'+value.name+' </a></h6>';
 prod += '<strong>'+value.currencyAbbreviation+' '+value.selling_price+'</strong>';
@@ -189,7 +189,7 @@ var pr = '';
 //populate to html product list
    pr += '<div class="col-md-3 vitu2 " >';
  pr += '<figure class="card card-sm card-product">';
-pr += '<div class="img-wrap"><img src="http://3.129.253.11/business/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
+pr += '<div class="img-wrap"><img src="http://13.235.2.236/ecomApp/public/uploads/'+value.image +'" width="250px" height="150px" class="img-fluid"></div>';
 pr += '<figcaption class="info-wrap text-center">';
 pr += '<h6 class="title text-truncate"><a href="#"  class="detail" data-id="'+value.product_id+'" >'+value.name+' </a></h6>';
 pr += '<strong>'+value.currencyAbbreviation+' '+value.selling_price+'</strong>';
@@ -215,7 +215,7 @@ $.each(result.data,function(key,value){
 var prod = '';
   prod += '<div class="col-md-3 vitu3">';
   prod+=  '<figure class="card card-sm card-product">';
-prod += '<div class="img-wrap"><img src="http://3.129.253.11/business/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
+prod += '<div class="img-wrap"><img src="http://13.235.2.236/ecomApp/public/uploads/'+value.image +'" width="250px" height="150px" class="img-fluid"></div>';
   prod += '<figcaption class="info-wrap text-center">';
 prod += '<h6 class="title text-truncate"><a href="#" class="detail" class="detail" data-id="'+value.product_id+'">'+value.name+' </a></h6>';
 prod += '<strong>'+value.currencyAbbreviation+' '+value.selling_price+'</strong>';
@@ -242,7 +242,7 @@ var prod = '';
 //populate to html product list
   prod += '<div class="col-md-3 vitu4">';
   prod+=  '<figure class="card card-sm card-product">';
-prod += '<div class="img-wrap"><img src="http://3.129.253.11/business/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
+prod += '<div class="img-wrap"><img src="http://13.235.2.236/ecomApp/public/uploads/'+value.image +'" width="250px" height="150px" class="img-fluid"></div>';
 prod += '<figcaption class="info-wrap text-center">';
 prod += '<h6 class="title text-truncate"><a href="#"  class="detail" class="detail" data-id="'+value.product_id+'" >'+value.name+' </a></h6>';
 prod += '<strong>'+value.currencyAbbreviation+' '+value.selling_price+'</strong>';
@@ -294,7 +294,7 @@ var recommended = '';
 //populate to html product list
  recommended += '<div class="col-md-3 vitu5">';
   recommended +=  '<figure class="card card-sm card-product">';
-recommended += '<div class="img-wrap"><img src="http://localhost/biashara/public/uploads/' + value.image +'" width="250px" height="150px" class="img-fluid"></div>';
+recommended += '<div class="img-wrap"><img src="http://13.235.2.236/ecomApp/public/uploads/'+value.image +'" width="250px" height="150px" class="img-fluid"></div>';
 recommended += '<figcaption class="info-wrap text-center">';
 recommended += '<h6 class="title text-truncate"><a href="#" class="detail" class="detail" data-id="'+value.product_id+'" >'+value.name+' </a></h6>';
 recommended += '<strong>'+value.currencyAbbreviation+' '+value.selling_price+'</strong>';
@@ -369,7 +369,7 @@ $.each(data.data,function(key,value){
 var read = '';
 //populate to html product details
 read += '<div class="row no-gutters"><aside class="col-sm-6 border-right"><article class="gallery-wrap">'; 
-read += '<div class="img-big-wrap"><div> <a href="http:://localhost/biashara/public/uploads/'+value.image+'" data-fancybox=""><img src="http://localhost/biashara/public/uploads/'+value.image+'"></a></div></div>'; 
+read += '<div class="img-big-wrap"><div> <a href="http://13.235.2.236/ecomApp/public/uploads/'+value.image+'" data-fancybox=""><img src="http://13.235.2.236/ecomApp/public/uploads/'+value.image+'"></a></div></div>'; 
 read += '<div class="img-small-wrap"><div class="item-gallery"> <img src="images/items/1.jpg"></div>';
 read += '<div class="item-gallery"> <img src="images/items/2.jpg"></div><div class="item-gallery"> <img src="images/items/3.jpg"></div>';
 read += '<div class="item-gallery"> <img src="images/items/4.jpg"></div></div></article></aside>';

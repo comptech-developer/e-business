@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-    var baseUrl = 'http://3.129.253.11/business/public/api';
-    const urlregister =baseUrl +"/register"; 
+    var baseUrl = 'http://13.235.2.236/ecomApp/public/api';
+    const urlregister =baseUrl +"/registration"; 
  
    
 
